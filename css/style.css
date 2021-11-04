@@ -24,7 +24,7 @@ header, body, footer{
 
 header {
   font-family: 'Roboto Slab', 'Open Sans', sans-serif;
-  font-size: xx-large;
+  font-size: larger;
   font-weight: bolder;
   background-color: darkcyan;
   padding: 10px;
