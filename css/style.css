@@ -1,5 +1,5 @@
 h1 h2{
-  font-family: 'Roboto Slab', 'Open Sans', sans-serif;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
   font-weight: bold;
   padding-left: 30px;
   color: white;
@@ -17,7 +17,7 @@ h2 {
 }
 
 p {
-  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-family: 'Roboto Slab', 'Open Sans', sans-serif;
 }
 
 header img {
@@ -43,7 +43,7 @@ header {
 
 li {
   font-size: large;
-  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-family: 'Roboto Slab', 'Open Sans', sans-serif;
 }
 
 footer {
