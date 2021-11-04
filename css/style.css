@@ -1,43 +1,57 @@
-h1 h2{
-  font-family: 'Zen Antique', serif;
-  padding-left: 30px;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  
-}
-
-h1 {
-  font-size: larger;
-}
-
-h2 {
-  font-size: large;
-  margin-bottom: 0px;
-}
-
-header img {
-  float: right;
-  width: 200px;
-  height: auto;
-  box-shadow:1px 2px 2px 1px black;
-  margin-right: 10px;
-  margin-top: 5px;
-}
-
 header, body, footer{
   max-width: 800px;
   margin: 0 auto;
 }
 
 header {
+  font-family: 'Roboto Slab', 'Open Sans', sans-serif;
+  font-size: larger;
+  font-weight: bolder;
   background-color: darkcyan;
-  padding: 5px;
-  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  float: right;
+  width: auto;
+  height: 300px;
+  box-shadow:1px 2px 2px 1px black;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+p {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Roboto Slab', 'Open Sans', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+li {
+  font-size: medium;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 footer {
+  display: block;
   background-color: darkcyan;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+}
+
+#main-body {
+  padding-left: 20px;
+  color: dimgrey;
 }
 
 #copyright {
@@ -45,8 +59,9 @@ footer {
   color: black;
 }
 
-#dateModified{
+#date-modified{
   font-weight: bold;
-  color: dimgray;
-  padding-left: 170px;
+  font-size: small;
+  margin: -10px 0 20px 0;
+  color: black;
 }
