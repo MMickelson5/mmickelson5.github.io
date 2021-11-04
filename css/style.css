@@ -12,7 +12,6 @@ h2 {
 h1 h2{
   font-family: 'Roboto Slab', 'Open Sans', sans-serif;
   padding-left: 30px;
-  color: white;
   align-items: center;
   justify-content: center;
 }
@@ -63,10 +62,10 @@ footer {
 #copyright {
   font-size: medium;
   color: black;
-  margin-bottom: 0;
 }
 
 #date-modified{
   font-weight: bold;
+  font-size: small;
   color: black;
 }
