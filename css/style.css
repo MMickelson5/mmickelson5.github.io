@@ -41,6 +41,7 @@ li {
 }
 
 footer {
+  display: block;
   background-color: darkcyan;
   padding: 10px;
   border-radius: 5px;
@@ -50,7 +51,6 @@ footer {
 
 #main-body {
   padding-left: 20px;
-  margin-bottom: -5px;
   color: dimgrey;
 }
 
@@ -62,5 +62,6 @@ footer {
 #date-modified{
   font-weight: bold;
   font-size: small;
+  margin: -10px 0 20px 0;
   color: black;
 }
