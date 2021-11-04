@@ -1,21 +1,19 @@
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: larger;
+  margin-bottom: 0px;
+}
+
 h1 h2{
-  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-family: 'Roboto Slab', 'Open Sans', sans-serif;
   font-weight: bold;
   padding-left: 30px;
   color: white;
   align-items: center;
   justify-content: center;
-}
-
-h1 {
-  font-size: xx-large;
-  font-family: 'Roboto', 'Open Sans', sans-serif;
-}
-
-h2 {
-  font-family: 'Roboto', 'Open Sans', sans-serif;
-  font-size: larger;
-  margin-bottom: 0px;
 }
 
 p {
@@ -45,7 +43,7 @@ header {
 
 li {
   font-size: large;
-  font-family: 'Roboto Slab', 'Open Sans', sans-serif;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 footer {
