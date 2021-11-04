@@ -1,0 +1,44 @@
+h1 h2{
+  font-family: 'Zen Antique', serif;
+  padding-left: 30px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+header img {
+  float: right;
+  width: 200px;
+  height: auto;
+  box-shadow:5px 5px 3px 3px black;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+header, body, footer{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: darkcyan;
+  padding: 5px;
+}
+
+footer {
+  background-color: darkcyan;
+}
+
+#copyright {
+  font-size: small;
+  color: black;
+}
+
+#dateModified{
+  color: dimgrey;
+  padding-left: 170px;
+}
