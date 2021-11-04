@@ -40,6 +40,20 @@ li {
   font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
+li a:link {
+  color: darkcyan;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-shadow: 2px 1px 5px lightgray;
+  text-decoration: none;
+}
+
+li a:visited {
+  color: darkcyan;
+}
+
 footer {
   display: block;
   background-color: darkcyan;
@@ -47,6 +61,15 @@ footer {
   border-radius: 5px;
   align-items: center;
   text-align: center;
+}
+
+footer a:link {
+  color: black;
+}
+
+footer a:hover {
+  font-weight: 500;
+  text-shadow: 5px 2px 5px gray;
 }
 
 #main-body {
