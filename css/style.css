@@ -1,8 +1,7 @@
 h1 h2{
   font-family: 'Zen Antique', serif;
   padding-left: 30px;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   color: white;
   
 }
@@ -41,6 +40,10 @@ footer {
   border-radius: 5px;
   align-items: center;
   text-align: center;
+}
+
+#main_body {
+  padding-left: 20px;
 }
 
 #copyright {
