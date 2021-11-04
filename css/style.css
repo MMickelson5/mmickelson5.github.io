@@ -1,5 +1,5 @@
 h1 h2{
-  font-family: 'Zen Antique', serif;
+  font-family: 'Roboto Slab', 'Open Sans', sans-serif;
   padding-left: 30px;
   color: white;
   align-items: center;
@@ -14,6 +14,10 @@ h1 {
 h2 {
   font-size: larger;
   margin-bottom: 0px;
+}
+
+p {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 header img {
