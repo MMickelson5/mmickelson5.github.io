@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Reece Mickelson">
+    <meta name="description" content="Assignment portal for Reece Mickelson in WDD 230: Web Frontend Development at BYU-I">
     <script type="text/javascript" src="test.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="css/style.css" rel=stylesheet>
     <title>Reece Mickelson's Portal</title>
 </head>
 <body>
-    <input type="text" id="input">
-    <button type="button" onclick="testFunction()"></button>
-    <div id="output"></div>
+    <header>
+        <h1>Mark Reece Mickelson</h1>
+    </header>
+    <h2>WDD 230: Assignment Portal</h2>
+    <ul>
+        <li>Lesson 01: <a href="https://www.google.com">Course Assignments Portal</a></li>
+        <li>Lesson 01: <a href="https://www.google.com">Design Priciples Document</a></li>
+    </ul>
+    <footer>
+        <div id="copyright">
+            <p>
+                &copy;<span id="getYear"></span>
+                | Reece Mickelson | Arizona | <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+            </p>
+        </div>
+        <div id="dateModified">
+            <p>
+                Last updated: <span id="lastModified"></span>
+            </p>
+    </footer>
 </body>
 </html>
