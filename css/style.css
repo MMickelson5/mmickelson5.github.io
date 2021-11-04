@@ -1,7 +1,6 @@
 h1 h2{
   font-family: 'Zen Antique', serif;
   padding-left: 30px;
-  text-align: center;
   color: white;
   
 }
@@ -31,7 +30,7 @@ header, body, footer{
 
 header {
   background-color: darkcyan;
-  padding: 5px;
+  text-align: center;
   border-radius: 5px;
 }
 
