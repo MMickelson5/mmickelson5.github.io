@@ -31,8 +31,7 @@ header, body, footer{
 header {
   background-color: darkcyan;
   padding: 10px;
-  margin-right: 50px;
-  text-align: center;
+  text-align: start;
   border-radius: 5px;
 }
 
@@ -45,7 +44,7 @@ footer {
 
 #main_body {
   padding-left: 20px;
-  color: gray;
+  color: dimgrey;
 }
 
 #copyright {
