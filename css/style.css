@@ -41,7 +41,7 @@ li {
 }
 
 li a:link {
-  color: darkcyan;
+  color: #004242;
   text-decoration: none;
 }
 
@@ -51,7 +51,7 @@ li a:hover {
 }
 
 li a:visited {
-  color: darkcyan;
+  color: #004242;
 }
 
 footer {
