@@ -4,9 +4,15 @@ h1 h2{
   align-items: center;
   justify-content: center;
   color: white;
+  
+}
+
+h1 {
+  font-size: larger;
 }
 
 h2 {
+  font-size: large;
   margin-bottom: 0px;
 }
 
@@ -14,7 +20,7 @@ header img {
   float: right;
   width: 200px;
   height: auto;
-  box-shadow:5px 5px 3px 3px black;
+  box-shadow:1px 2px 2px 1px black;
   margin-right: 10px;
   margin-top: 5px;
 }
@@ -27,6 +33,7 @@ header, body, footer{
 header {
   background-color: darkcyan;
   padding: 5px;
+  border-radius: 25px;
 }
 
 footer {
@@ -34,7 +41,7 @@ footer {
 }
 
 #copyright {
-  font-size: small;
+  font-size: medium;
   color: black;
 }
 
