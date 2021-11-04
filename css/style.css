@@ -1,5 +1,6 @@
 h1 h2{
   font-family: 'Roboto Slab', 'Open Sans', sans-serif;
+  font-weight: bold;
   padding-left: 30px;
   color: white;
   align-items: center;
@@ -8,7 +9,6 @@ h1 h2{
 
 h1 {
   font-size: xx-large;
-  font-weight: bold;
 }
 
 h2 {
