@@ -2,7 +2,8 @@ h1 h2{
   font-family: 'Zen Antique', serif;
   padding-left: 30px;
   color: white;
-  
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
