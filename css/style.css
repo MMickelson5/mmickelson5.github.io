@@ -39,6 +39,7 @@ header {
 footer {
   background-color: darkcyan;
   border-radius: 5px;
+  align-items: center;
 }
 
 #copyright {
