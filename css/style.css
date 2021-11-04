@@ -9,22 +9,13 @@ header {
   font-weight: bolder;
   background-color: darkcyan;
   padding: 10px;
-  text-align: start;
+  text-align: center;
   border-radius: 5px;
   align-items: center;
   justify-content: center;
 }
 
-p {
-  font-family: 'Roboto', 'Open Sans', sans-serif;
-}
-
-li {
-  font-size: medium;
-  font-family: 'Roboto', 'Open Sans', sans-serif;
-}
-
-header, img {
+header img {
   float: right;
   width: 200px;
   height: auto;
@@ -37,6 +28,15 @@ div, h2 {
   font-size: large;
   font-weight: bold;
   margin-bottom: 0px;
+}
+
+p {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+li {
+  font-size: large;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 footer {
