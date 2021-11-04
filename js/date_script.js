@@ -1,8 +1,7 @@
 let date = new Date();
 document.getElementById("getYear").textContent = date.getFullYear();
 
-var string = document.lastModified;
-let oLastModif = new Date(document.lastModified);
-let day = (oLastModif.getMonth() + 1) + "/" + oLastModif.getDate() + "/" + oLastModif.getFullYear();
-let hour = oLastModif.getHours() + ":" + oLastModif.getMinutes() + ":" + oLastModif.getSeconds();
-document.getElementById("lastModified").textContent = day + " " + hour;
+let lastModif = new Date(document.lastModified);
+let day = (lastModif.getMonth() + 1) + "/" + lastModif.getDate() + "/" + lastModif.getFullYear();
+let hour = lastModif.getHours() + ":" + lastModif.getMinutes() + ":" + lastModif.getSeconds();
+document.getElementById("last-modified").innerHTML = day + " " + hour;
