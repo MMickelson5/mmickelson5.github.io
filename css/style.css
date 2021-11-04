@@ -24,12 +24,6 @@ header img {
   margin-top: 5px;
 }
 
-h2 {
-  font-size: large;
-  font-weight: bold;
-  margin-bottom: 0px;
-}
-
 p {
   font-family: 'Roboto', 'Open Sans', sans-serif;
 }
@@ -50,6 +44,12 @@ footer {
 #main-body {
   padding-left: 20px;
   color: dimgrey;
+}
+
+#main-body h2 {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
 #copyright {
