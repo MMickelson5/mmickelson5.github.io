@@ -30,6 +30,7 @@ header, body, footer{
 
 header {
   background-color: darkcyan;
+  padding: 10px;
   text-align: center;
   border-radius: 5px;
 }
