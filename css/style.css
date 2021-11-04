@@ -72,6 +72,10 @@ footer a:hover {
   text-shadow: 5px 2px 5px gray;
 }
 
+footer a:visited {
+  color: black;
+}
+
 #main-body {
   padding-left: 20px;
   color: dimgrey;
