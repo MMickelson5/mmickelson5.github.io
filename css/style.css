@@ -8,11 +8,11 @@ h1 h2{
 }
 
 h1 {
-  font-size: larger;
+  font-size: xx-large;
 }
 
 h2 {
-  font-size: large;
+  font-size: larger;
   margin-bottom: 0px;
 }
 
@@ -33,7 +33,7 @@ header, body, footer{
 header {
   background-color: darkcyan;
   padding: 5px;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 footer {
