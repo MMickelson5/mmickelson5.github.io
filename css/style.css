@@ -45,7 +45,7 @@ footer {
   text-align: center;
 }
 
-#main_body {
+#main-body {
   padding-left: 20px;
   color: dimgrey;
 }
@@ -55,7 +55,7 @@ footer {
   color: black;
 }
 
-#date_modified{
+#date-modified{
   font-weight: bold;
   color: black;
 }
