@@ -41,6 +41,10 @@ header {
   border-radius: 5px;
 }
 
+li {
+  font-size: large;
+}
+
 footer {
   background-color: darkcyan;
   padding: 10px;
