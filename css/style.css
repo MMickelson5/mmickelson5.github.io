@@ -28,6 +28,12 @@ p {
   font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
+h2 {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
 li {
   font-size: large;
   font-family: 'Roboto', 'Open Sans', sans-serif;
@@ -44,12 +50,6 @@ footer {
 #main-body {
   padding-left: 20px;
   color: dimgrey;
-}
-
-#main-body h2 {
-  font-size: large;
-  font-weight: bold;
-  margin-bottom: 0px;
 }
 
 #copyright {
