@@ -39,6 +39,7 @@ footer {
 }
 
 #dateModified{
-  color: dimgrey;
+  font-weight: bold;
+  color: dimgray;
   padding-left: 170px;
 }
