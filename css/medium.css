@@ -1,0 +1,20 @@
+@media only screen and (min-width: 32.5em) {
+
+    header {
+        font-size: larger;
+        border-radius: 5px;
+    }
+    
+    h2 {
+        font-size: large;
+    }
+
+    header img {
+        float: right;
+        width: auto;
+        height: 300px;
+        box-shadow:1px 2px 2px 1px black;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+}

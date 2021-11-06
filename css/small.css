@@ -5,23 +5,19 @@ header, body, footer{
 
 header {
   font-family: 'Roboto Slab', 'Open Sans', sans-serif;
-  font-size: larger;
+  font-size: large;
   font-weight: bolder;
   background-color: darkcyan;
   padding: 10px;
   text-align: center;
-  border-radius: 5px;
   align-items: center;
   justify-content: center;
 }
 
 header img {
-  float: right;
   width: auto;
   height: 300px;
   box-shadow:1px 2px 2px 1px black;
-  margin-right: 10px;
-  margin-top: 5px;
 }
 
 p {
@@ -30,7 +26,7 @@ p {
 
 h2 {
   font-family: 'Roboto Slab', 'Open Sans', sans-serif;
-  font-size: large;
+  font-size: medium;
   font-weight: bold;
   margin-bottom: 0px;
 }
