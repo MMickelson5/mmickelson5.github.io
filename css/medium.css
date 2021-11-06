@@ -17,4 +17,8 @@
         margin-right: 10px;
         margin-top: 5px;
     }
+    
+    footer {
+        border-radius: 5px;
+    }
 }
