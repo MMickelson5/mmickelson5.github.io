@@ -1,21 +1,39 @@
 @media only screen and (min-width: 60em) {
+    header {
+        font-size: larger;
+    }
+    
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        max-width: 1130px;
+        grid-template-rows: 1fr auto;
+        max-width: 900px;
+    }
+
+    section {
+        font-size: larger;
+        max-width: 800px;
     }
 
     main section:nth-child(3) {
-        grid-column: 1 / 2;
+        grid-column: 1/2;
     }
 
     main section:nth-child(3) {
-        grid-column: 2 / 3;
+        grid-column: 2/3;
     }
 
     main section:nth-child(3) {
-        grid-column: 3 / 4;
+        grid-column: 3/4;
         grid-row: 1;
+    }
+
+    main section:nth-child(4) {
+        grid-column: 1/5;
+        grid-row: 2;
+    }
+
+    #copyright {
+        font-size: larger;
     }
 }
