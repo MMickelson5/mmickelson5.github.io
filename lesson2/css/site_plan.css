@@ -21,8 +21,9 @@ img {
 }
 
 #fonts-image {
-    width:max-content;
+    width: max-content;
     height: auto;
+    padding: 10px;
 }
 
 header,
@@ -120,6 +121,13 @@ ul {
 
 /* Tablet views */
 @media only screen and (min-width: 37.5em) {
+    header,
+    nav,
+    main,
+    footer {
+        border-radius: 5px;
+    }
+
     h1 {
         font-size: 2.2rem;
     }
@@ -149,6 +157,15 @@ ul {
 
 /* Desktop views */
 @media only screen and (min-width: 60em) {
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
     h1 {
         font-size: 3rem;
     }
@@ -171,7 +188,7 @@ ul {
     }
 
     #fonts-image {
-        width: 600px;
+        width: 400px;
         height: auto;
     }
 }
