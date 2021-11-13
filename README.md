@@ -12,3 +12,4 @@ root                        (project root folder)
 ---
 * author: Reece Mickelson
 * class: WDD 230
+* school: BYU-I Online
