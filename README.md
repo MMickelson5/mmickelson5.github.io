@@ -1,6 +1,14 @@
 # mmickelson5.github.io
-This will eventually contain information reguarding all my personal assignments submitted to WDD 230 by BYU-I.
 
+```
+root                        (project root folder)
++-- page portal             (landing page)
+  +-- week 1                (subfolder - week 1 assignments)
+    +-- design principles   (exploration into designing)
+  +-- week 2                (subfolder - week 2 assignments)
+    +-- weather site plan   (planning page for half moon chat)
+    +-- weather site        (half moon chat site)
+```
 ---
 * author: Reece Mickelson
 * class: WDD 230
