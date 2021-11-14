@@ -1,0 +1,230 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Small/Phone View ***************/
+header {
+	margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-family: 'Slabo 27px', 'Open Sans', sans-serif;
+}
+
+.headings h1 {
+	margin: 0;
+}
+
+img {
+	width: 80px;
+	height: auto;
+}
+
+body {
+    max-width: auto;
+    background-color: #ffffff;
+}
+
+main {
+	max-width: 760px;
+}
+
+.page-title {
+	text-align: center;
+	text-shadow: 1px 1px 1px gray;
+}
+
+p,
+ul {
+    font-size: 1rem;
+    font-family: 'Imprima', serif;
+}
+
+.body-sections {
+	border: 2px dotted black;
+	margin: 0 0 10px 0;
+	background-color: lightgray;
+	padding-left: 20px;
+}
+
+footer {
+	display: block;
+	position: relative;
+    margin-top: 5px;
+	margin: 0 auto;
+	max-width: 760px;
+    background-color: darkslategray;
+    font-family: 'Nunito', 'Open Sans', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: white;
+}
+
+footer a{
+    color: gold;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: darkslategray;
+    font-family: 'Nunito', 'Open Sans', sans-serif;
+}
+.navigation {
+	list-style: none; 
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+}
+.navigation a:hover {
+	color: gold;
+}
+
+.responsive li {
+	display: block;
+}
+
+/* Medium+ views */
+@media only screen and (min-width: 32.5em) {
+	header,
+    nav,
+    main,
+    footer {
+        border-radius: 5px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+		justify-content: left;
+        padding: 0;
+		margin-top: 10px;
+    }
+
+	.headings {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.m {
+		letter-spacing: 1pt;
+		color: darkslategray;
+		margin-left: 20px;
+	}
+
+    h1 {
+        padding-left: 20px;
+        font-size: 2.2rem;
+        margin-left: 10%;
+    }
+
+	.page-title {
+		text-align: left;
+	}
+
+	body {
+		max-width: 100%;
+		margin: 0 auto;
+		background-color: #ffffff;
+	}
+
+    img {
+        width: 100px;
+        height: auto;
+    }
+
+	footer {
+        font-size: 1.2rem;
+    }
+
+    p,
+    ul {
+        font-size: 1rem;
+    }
+
+    #fonts-image {
+        width: 400px;
+        height: auto;
+    }
+
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
+/* Desktop views */
+@media only screen and (min-width: 60em) {
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+	header {
+		margin-top: 10px;
+	}
+
+    h1 {
+        font-size: 3rem;
+		margin: 0;
+    }
+
+	h2 {
+        font-size: 1.8rem;
+		margin: 0;
+    }
+
+	.page-title {
+		padding-bottom: 20px;
+	}
+
+	.body-sections {
+		max-width: 1000px;
+	}
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+
+    p,
+    ul {
+        font-size: 1.2rem;
+    }
+
+    #fonts-image {
+        width: 400px;
+        height: auto;
+    }
+}
