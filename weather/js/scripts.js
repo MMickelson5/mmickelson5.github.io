@@ -6,13 +6,21 @@ function toggleMenu() {
 }
 
 function setDate() {
-    var date = new Date();
+    const date = new Date();
     let weekdays = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
-    let today = weekdays[date.getDay()];
-    let day = date.getDay()
-    let month = date.getMonth()
+    let months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
 
-    document.getElementById('getYear').textContent = date.getFullYear();
-    document.getElementById('date').innerHTML = today + ', ' + day + '/' + month
+    let today = weekdays[date.getDay()];
+    let day = date.getDate();
+    let month = months[date.getMonth()];
+    let year = date.getFullYear();
+
+    document.getElementById('getYear').textContent = year;
+    document.getElementById('date').innerHTML = today + ', ' + day + ' ' + month + ' ' + year
+
+    if (day == 5){
+        document.querySelector('#heads-up').style.display = "block";
+        document.querySelector('#heads-up').style.fontWeight = 'bold';
+    }
 }
 window.onload(setDate())

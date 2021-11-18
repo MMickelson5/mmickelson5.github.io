@@ -1,4 +1,4 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+v/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -27,7 +27,7 @@ body {
 }
 
 main {
-	max-width: 760px;
+	max-width: 100%;
 }
 
 .page-title {
@@ -43,9 +43,11 @@ ul {
 
 .body-sections {
 	border: 2px dotted black;
-	margin: 0 0 10px 0;
+	margin: 0 auto;
+	margin-bottom: 10px;
 	background-color: lightgray;
 	padding-left: 20px;
+	text-align: center;
 }
 
 footer {
@@ -97,6 +99,56 @@ nav {
 
 .responsive li {
 	display: block;
+}
+
+#active {
+    text-decoration: overline;
+}
+
+#heads-up {
+	display: none;
+	font-size: 1.2em;
+    margin: 0 auto;
+	text-align: center;
+    padding: 3px;
+	background-color: orange;
+}
+
+.forecast {
+    display: none;
+}
+
+#banner {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.cur-weather h2, p {
+	font-size: 1rem;
+	font-family: 'Imprima', serif;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.cur-weather h2 {
+	font-size: 1.5rem;
+	font-family: 'Slabo 27px', 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+.social-icons {
+	width: 30px;
+}
+
+.location {
+	display: none;
+}
+
+.contact {
+	margin-top: -3rem;
+	line-height: 1.5rem;
 }
 
 /* Medium+ views */
@@ -175,6 +227,65 @@ nav {
 	.navigation li:first-child {
 		display: none;
 	}
+
+	.forecast {
+        display: block;
+        text-align: center;
+		padding-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 350px;
+	}
+
+	.fiveDay table, th, td {
+        border: 1px solid darkslategray;
+        border-collapse: collapse;
+        padding: 1em;
+	}
+
+	.cur-weather p {
+		font-size: 1rem;
+		margin: 0 auto;
+		text-align: justify;
+	}
+
+	.cur-weather {
+		position: absolute;
+		top: 250px;
+		left: auto;
+		margin-left: 20px;
+		background: darkslategray;
+		color: white;
+		padding: 1.5rem;
+		box-shadow: 0 0 10px black;
+		opacity: .8;
+		border-radius: 10px;
+	}
+
+	#banner {
+		border-radius: 10px;
+		margin-bottom: 10px;
+	}
+
+	.contact{
+		margin-top: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+	}
+
+	.location {
+		display: block;
+		width: 100%;
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.contact-info {
+		margin: auto;
+		grid-column: 2;
+		grid-row: 1;
+	}
 }
 
 /* Desktop views */
@@ -227,4 +338,12 @@ nav {
         width: 400px;
         height: auto;
     }
+
+	.herodiv h1, h2, p {
+		margin: 0;
+	}
+
+	.cur-weather {
+		top: 270px;
+	}
 }

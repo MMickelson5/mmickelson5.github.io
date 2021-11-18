@@ -28,6 +28,7 @@
      
 </head>
 <body>
+    <div id="heads-up">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion</div>
 <!-- HEADER HERE -->
 	<header>
         <img src="images/half-moon-chat.png" alt="Image of moon/sun partially behind cloud">
@@ -43,7 +44,7 @@
         <ul class="navigation">
             <li><a class="nav-toggler" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Preston</a></li>
+            <li><a id="active" href="preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -55,17 +56,58 @@
 <!-- CONTENT HERE -->
     <main>
         <h2 class="page-title">Preston Idaho</h2>
+        <img src="images/banner.png" alt="Image of town" id="banner">
+            <section class="cur-weather">
+                <h2>Current Weather</h2>
+                <p>Currently: <span id="current">Cloudy</span></p>
+                <p>High: <span id="age">65°F</span></p>
+                <p>Wind Chill: <span id="shots">--</span></p>
+                <p>Humidity: <span id="shots">15%</span></p>
+                <p>Wind Speed: <span id="shots">12 Mph</span></p>
+            </section>
+        </div>
         <section class="body-sections">
             <h3><i>Summary</i></h3>
         </section>
         <section class="body-sections">
             <h3><i>5 Day Forecast</i></h3>
+                <div class="forecast">
+                    <table cellspacing="0">
+                        <tr>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                        <tr>
+                            <td>&#127774;<br>89 &#176;F</td>
+                            <td>&#127774;<br>87 &#176;F</td>
+                            <td>&#127774;<br>78 &#176;F</td>
+                            <td>&#127774;<br>75 &#176;F</td>
+                            <td>&#127774;<br>72 &#176;F</td>
+                        </tr>
+                    </table>
+                </div>
         </section>
         <section class="body-sections">
             <h3><i>Article</i></h3>
         </section>
         <section class="body-sections">
             <h3><i>Contact Information</i></h3>
+            <div class="contact">
+                <br>
+                <img src="images/location.png" alt="Image of company location" class="location"><br>
+                <div class="contact-info">
+                    <span class="address">&#128205; 301 N 1st E</span><br>
+                    <span class="address">Preston, ID 82367</span><br><br>
+                    <span class="phone">&#128222; 555-0101</span><br>
+                    <span class="email">&#128233; example@weather.com</span><br><br>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram" class="social-icons"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook" class="social-icons"></a>
+                    <a href="http://twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter" class="social-icons"></a>
+                </div>
+            </div>
         </section>
     </main>
     
