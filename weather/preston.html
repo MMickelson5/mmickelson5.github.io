@@ -25,6 +25,7 @@
 
 <!-- SCRIPT -->
 <script src="js/scripts.js" type="text/javascript" defer></script>
+<script src="js/wind_chill.js" type="text/javascript" defer></script>
      
 </head>
 <body>
@@ -56,14 +57,18 @@
 <!-- CONTENT HERE -->
     <main>
         <h2 class="page-title">Preston Idaho</h2>
-        <img src="images/banner.png" alt="Image of town" id="banner">
+        <picture id="banner">
+            <source srcset="images/banner250.jpg" media="(max-width: 600px)">
+            <source srcset="images/banner600.jpg" media="(max-width: 800px)">
+            <img src="images/banner1000.jpg" alt="Image of Preston Idaho" id="banner">
+        </picture>
             <section class="cur-weather">
                 <h2>Weather Summary</h2><hr>
-                <p>Currently: <span id="current">Cloudy</span></p>
+                <p>Currently: <span id="current">Cloudy </span><span id="temperature">20</span>°F</p>
                 <p>High: <span id="age">65°F</span></p>
-                <p>Wind Chill: <span id="shots">--</span></p>
-                <p>Humidity: <span id="shots">15%</span></p>
-                <p>Wind Speed: <span id="shots">12 Mph</span></p>
+                <p>Wind Chill: <span id="chill"></span>°F</p>
+                <p>Humidity: <span id="humidity">15%</span></p>
+                <p>Wind Speed: <span id="wind">12</span> Mph</p>
             </section>
         </div>
         <section class="forecast">
@@ -87,14 +92,22 @@
                     </table>
                 </div>
         </section>
+
         <section class="body-sections">
-            <h3><i>Article</i></h3>
-            <picture class="article-image">
-                <source media="(max-width: 400px)" srcset="images/storm600.jpg">
-                <source media="(min-width: 800px)" srcset="images/storm1000.jpg">
-                <img src="images/storm250.jpg" alt="iReady2Go logo">
-            </picture>
-            <p>This is the text available for the article.</p>
+            <p><b>Is your family safe?</b></p>
+            <hr>
+            <div id="article-body">
+                <picture id="article-image">
+                    <source srcset="images/storm600.jpg" media="(max-width: 600px)">
+                    <source srcset="images/storm1000.jpg" media="(max-width: 800px)">
+                    <img src="images/storm1000.jpg" alt="Image of storm clouds" id="article-image">
+                </picture>
+                <div id="article-text">
+                    <p>It's monsoon season again in our beautiful town of Preston. Monsoon season is a wonderful for our agriculture and lawns, but with monsoons come dangers like lightning, flash flooding, and oppressive winds. How do you keep your family safe?</p>
+                    <p>First, ensure those dependent on you know safe water interaction. <b>1)</b> Never drive a vehicle in standing water where you can't see the bottom clearly. <b>2)</b> Always travel with a companion when weather gets nasty. <b>3)</b> Keep a reserve of food and water ready in case of long term power outages.</p>
+                    <p>Stay posted for future updates and notifications. We will keep you up to date on the latest weather conditions as we recieve them.</p>
+                </div>
+            </div>
         </section>
         <section class="body-sections">
             <h3><i>Contact Information</i></h3>

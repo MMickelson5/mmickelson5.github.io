@@ -46,7 +46,7 @@ ul {
 	margin: 0 auto;
 	margin-bottom: 10px;
 	background-color: lightgray;
-	padding-left: 20px;
+	padding: 10px 20px 0 10px;
 	text-align: center;
 }
 
@@ -162,9 +162,11 @@ nav {
 	line-height: 1.5rem;
 }
 
-.article-image {
+#article-image {
+	margin: 20px 0 20px 0;
 	width: 100%;
 	height: auto;
+	border-radius: 10px;
 }
 
 /* Medium+ views */
@@ -303,6 +305,27 @@ nav {
 		grid-column: 2;
 		grid-row: 1;
 	}
+
+	#article-image {
+		margin: 20px 0 20px 0;
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		flex-basis: 70%;
+		order: 2;
+	}
+
+	#article-body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: justify;
+	}
+
+	#article-text {
+		width: 90%;
+		padding-right: 20px;
+	}
 }
 
 /* Desktop views */
@@ -355,10 +378,6 @@ nav {
         width: 400px;
         height: auto;
     }
-
-	.herodiv h1, h2, p {
-		margin: 0;
-	}
 
 	.cur-weather {
 		top: 270px;
