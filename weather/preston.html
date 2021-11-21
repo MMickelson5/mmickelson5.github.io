@@ -58,7 +58,7 @@
         <h2 class="page-title">Preston Idaho</h2>
         <img src="images/banner.png" alt="Image of town" id="banner">
             <section class="cur-weather">
-                <h2>Current Weather</h2>
+                <h2>Weather Summary</h2><hr>
                 <p>Currently: <span id="current">Cloudy</span></p>
                 <p>High: <span id="age">65°F</span></p>
                 <p>Wind Chill: <span id="shots">--</span></p>
@@ -66,9 +66,6 @@
                 <p>Wind Speed: <span id="shots">12 Mph</span></p>
             </section>
         </div>
-        <section class="body-sections">
-            <h3><i>Summary</i></h3>
-        </section>
         <section class="forecast">
             <h3 class="forecast"><i>5 Day Forecast</i></h3>
                 <div class="forecast">
@@ -92,6 +89,12 @@
         </section>
         <section class="body-sections">
             <h3><i>Article</i></h3>
+            <picture class="article-image">
+                <source media="(max-width: 400px)" srcset="images/storm600.jpg">
+                <source media="(min-width: 800px)" srcset="images/storm1000.jpg">
+                <img src="images/storm250.jpg" alt="iReady2Go logo">
+            </picture>
+            <p>This is the text available for the article.</p>
         </section>
         <section class="body-sections">
             <h3><i>Contact Information</i></h3>

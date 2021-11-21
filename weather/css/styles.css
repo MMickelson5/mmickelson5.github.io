@@ -125,17 +125,28 @@ nav {
 	width: 100%;
 }
 
-.cur-weather h2, p {
+.cur-weather p {
 	font-size: 1rem;
 	font-family: 'Imprima', serif;
 	margin: 0 auto;
-	text-align: center;
+	margin-left: 10px;
 }
 
 .cur-weather h2 {
 	font-size: 1.5rem;
 	font-family: 'Slabo 27px', 'Open Sans', sans-serif;
 	font-weight: bold;
+	margin: 0 auto;
+	margin-left: 10px;
+}
+
+.cur-weather hr {
+	margin-left: 10px;
+	width: 10rem;
+}
+
+.cur-weather {
+	padding-bottom: 10px;
 }
 
 .social-icons {
@@ -149,6 +160,11 @@ nav {
 .contact {
 	margin-top: -3rem;
 	line-height: 1.5rem;
+}
+
+.article-image {
+	width: 100%;
+	height: auto;
 }
 
 /* Medium+ views */
