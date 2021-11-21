@@ -19,8 +19,8 @@ function setDate() {
     document.getElementById('date').innerHTML = today + ', ' + day + ' ' + month + ' ' + year
 
     if (day == 5){
-        document.querySelector('#heads-up').style.display = "block";
-        document.querySelector('#heads-up').style.fontWeight = 'bold';
+        document.getElementById('heads-up').style.display = 'block';
+        document.getElementById('heads-up').style.fontWeight = 'bold';
     }
 }
 window.onload(setDate())
