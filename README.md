@@ -8,6 +8,9 @@ root                        (project root folder)
   +-- week 2                (subfolder - week 2 assignments)
     +-- weather site plan   (planning page for half moon chat)
     +-- weather site        (half moon chat site)
+  +-- week 3
+    +-- preston site        (half moon chat sub-page)
+    +-- preston site images
 ```
 ---
 * author: Reece Mickelson
