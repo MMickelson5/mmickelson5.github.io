@@ -24,8 +24,8 @@
 <link href="css/styles.css" rel="stylesheet">
 
 <!-- SCRIPT -->
-<script src="js/scripts.js" type="text/javascript" defer></script>
-<script src="js/wind_chill.js" type="text/javascript" defer></script>
+<script src="js/scripts.js" defer></script>
+<script src="js/wind_chill.js" defer></script>
      
 </head>
 <body>
@@ -57,10 +57,10 @@
 <!-- CONTENT HERE -->
     <main>
         <h2 class="page-title">Preston Idaho</h2>
-        <picture id="banner">
+        <picture class="banner">
             <source srcset="images/banner250.jpg" media="(max-width: 600px)">
             <source srcset="images/banner600.jpg" media="(max-width: 800px)">
-            <img src="images/banner1000.jpg" alt="Image of Preston Idaho" id="banner">
+            <img src="images/banner1000.jpg" alt="Image of Preston Idaho" class="banner">
         </picture>
             <section class="cur-weather">
                 <h2>Weather Summary</h2><hr>
@@ -70,11 +70,10 @@
                 <p>Humidity: <span id="humidity">15%</span></p>
                 <p>Wind Speed: <span id="wind">12</span> Mph</p>
             </section>
-        </div>
         <section class="forecast">
             <h3 class="forecast"><i>5 Day Forecast</i></h3>
                 <div class="forecast">
-                    <table cellspacing="0">
+                    <table>
                         <tr>
                             <th>Mon</th>
                             <th>Tues</th>
@@ -97,10 +96,10 @@
             <p><b>Is your family safe?</b></p>
             <hr>
             <div id="article-body">
-                <picture id="article-image">
+                <picture class="article-image">
                     <source srcset="images/storm600.jpg" media="(max-width: 600px)">
                     <source srcset="images/storm1000.jpg" media="(max-width: 800px)">
-                    <img src="images/storm1000.jpg" alt="Image of storm clouds" id="article-image">
+                    <img src="images/storm1000.jpg" alt="Image of storm clouds" class="article-image">
                 </picture>
                 <div id="article-text">
                     <p>It's monsoon season again in our beautiful town of Preston. Monsoon season is a wonderful for our agriculture and lawns, but with monsoons come dangers like lightning, flash flooding, and oppressive winds. How do you keep your family safe?</p>

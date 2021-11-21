@@ -118,7 +118,7 @@ nav {
     display: none;
 }
 
-#banner {
+.banner {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -162,7 +162,7 @@ nav {
 	line-height: 1.5rem;
 }
 
-#article-image {
+.article-image {
 	margin: 20px 0 20px 0;
 	width: 100%;
 	height: auto;
@@ -262,6 +262,10 @@ nav {
         padding: 1em;
 	}
 
+	table {
+		border-spacing: 0;
+	}
+
 	.cur-weather p {
 		font-size: 1rem;
 		margin: 0 auto;
@@ -281,7 +285,7 @@ nav {
 		border-radius: 10px;
 	}
 
-	#banner {
+	.banner {
 		border-radius: 10px;
 		margin-bottom: 10px;
 	}
@@ -306,7 +310,7 @@ nav {
 		grid-row: 1;
 	}
 
-	#article-image {
+	.article-image {
 		margin: 20px 0 20px 0;
 		width: 100%;
 		height: auto;
