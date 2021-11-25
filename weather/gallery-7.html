@@ -25,7 +25,7 @@
 
 <!-- SCRIPT -->
 <script src="js/scripts.js" defer></script>
-<script src="js/wind_chill.js" defer></script>
+<script src="js/lazy_loading.js" defer></script>
      
 </head>
 <body>
@@ -45,70 +45,58 @@
         <ul class="navigation">
             <li><a class="nav-toggler" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a id="active" href="preston.html">Preston</a></li>
+            <li><a href="preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
+            <li><a id="active" href="gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
     
     
 <!-- CONTENT HERE -->
     <main>
-        <h2 class="page-title">Preston Idaho</h2>
-        <picture class="banner">
-            <source srcset="images/hero-small.jpg" media="(max-width: 500px)">
-            <source srcset="images/hero-medium.jpg" media="(max-width: 999px)">
-            <source srcset="images/hero-large.jpg" media="(min-width: 1000px)">
-            <img src="images/hero-large.jpg" alt="Image of Preston Idaho" class="banner">
-        </picture>
-            <section class="cur-weather">
-                <h2>Weather Summary</h2><hr>
-                <p>Currently: <span id="current">Cloudy </span><span id="temperature">20</span>°F</p>
-                <p>High: <span id="age">65°F</span></p>
-                <p>Wind Chill: <span id="chill"></span>°F</p>
-                <p>Humidity: <span id="humidity">15%</span></p>
-                <p>Wind Speed: <span id="wind">12</span> Mph</p>
-            </section>
-        <section class="forecast">
-            <h3 class="forecast"><i>5 Day Forecast</i></h3>
-                <div class="forecast">
-                    <table>
-                        <tr>
-                            <th>Mon</th>
-                            <th>Tues</th>
-                            <th>Wed</th>
-                            <th>Thurs</th>
-                            <th>Fri</th>
-                        </tr>
-                        <tr>
-                            <td>&#127780;<br>65 &#176;F</td>
-                            <td>&#127774;<br>68 &#176;F</td>
-                            <td>&#127784;<br>62 &#176;F</td>
-                            <td>&#127774;<br>68 &#176;F</td>
-                            <td>&#127774;<br>70 &#176;F</td>
-                        </tr>
-                    </table>
-                </div>
-        </section>
-
-        <section class="body-sections">
-            <p><b>Is your family safe?</b></p>
-            <hr>
-            <div id="article-body">
-                <picture class="article-image">
-                    <source srcset="images/storm600.jpg" media="(max-width: 600px)">
-                    <source srcset="images/storm1000.jpg" media="(max-width: 800px)">
-                    <img src="images/storm1000.jpg" alt="Image of storm clouds" class="article-image">
+        <body>
+            <h2 id="gallery-heading">Gallery</h2>
+            <div class="gallery">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://picsum.photos/id/10/800/600">
+                    <p>Lorem Picsum: Paul Jarvis</p>
                 </picture>
-                <div id="article-text">
-                    <p>It's monsoon season again in our beautiful town of Preston. Monsoon season is a wonderful for our agriculture and lawns, but with monsoons come dangers like lightning, flash flooding, and oppressive winds. How do you keep your family safe?</p>
-                    <p>First, ensure those dependent on you know safe water interaction. <b>1)</b> Never drive a vehicle in standing water where you can't see the bottom clearly. <b>2)</b> Always travel with a companion when weather gets nasty. <b>3)</b> Keep a reserve of food and water ready in case of long term power outages.</p>
-                    <p>Stay posted for future updates and notifications. We will keep you up to date on the latest weather conditions as we recieve them.</p>
-                </div>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://picsum.photos/id/1000/800/600">
+                    <p>Lorem Picsum: Lukas Budimaier</p>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://picsum.photos/id/1015/800/600">
+                    <p>Lorem Picsum: Alexey Topolyanskiy</p>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://picsum.photos/id/1016/800/600">
+                    <p>Lorem Picsum: Philippe Wuyts</p>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://picsum.photos/id/1018/800/600">
+                    <p>Lorem Picsum: Andrew Ridley</p>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://picsum.photos/id/1019/800/600">
+                    <p>Lorem Picsum: Patrick Fore</p>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://picsum.photos/id/1021/800/600">
+                    <p>Lorem Picsum: Frances Gunn</p>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://picsum.photos/id/1037/800/600">
+                    <p>Lorem Picsum: Jordan McQueen</p>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://picsum.photos/id/1040/800/600">
+                    <p>Lorem Picsum: Rachel Davis</p>
+                </picture>
             </div>
-        </section>
+        </body>
         <section class="body-sections">
             <h3><i>Contact Information</i></h3>
             <div class="contact">
