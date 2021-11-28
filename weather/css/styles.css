@@ -23,6 +23,7 @@ img {
 
 body {
     width: auto;
+	min-width: 360px;
     background-color: #ffffff;
 }
 
@@ -202,6 +203,75 @@ nav {
 	text-align: center;
 }
 
+form .information {
+    margin: 20px auto;
+    border: 2px dotted black;
+	background-color: lightgray;
+    padding: 10px 20px;
+	font-family: 'Imprima', serif;
+}
+
+form legend {
+    padding: 0 .5rem;
+	font-weight: bold;
+	font-family: 'Nunito', 'Open Sans', sans-serif;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+}
+
+form label.top input,
+form label.top select {
+    display: block;
+	font-family: 'Imprima', serif;
+    border: 2px dotted black;
+    border-radius: 4px;
+    padding: .75rem;
+    color: gray;
+    width: 100%;
+    max-width: 20rem;
+    background-color: white;
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: black;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: darkslategray;
+    color: white;
+    border-radius: 10px;
+    padding: .75rem;
+    width: 100%;
+	min-width: 360px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+select {
+	cursor: pointer;
+}
+
+form label.top input:required {
+    border-left: red solid 5px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 5px;
+}
+
+form textarea {
+	border-radius: 10px;
+	border: 2px dotted black;
+}
+
 /* Medium+ views */
 @media only screen and (min-width: 32.5em) {
 	header,
@@ -367,7 +437,6 @@ nav {
 	.gallery {
 		grid-template-columns: auto auto;  
 	}
-   
 
 }
 
