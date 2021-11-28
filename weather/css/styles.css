@@ -247,12 +247,15 @@ form input.submitBtn {
     border: none;
     background-color: darkslategray;
     color: white;
-    border-radius: 10px;
     padding: .75rem;
     width: 100%;
 	min-width: 360px;
 	margin-bottom: 20px;
 	cursor: pointer;
+}
+
+.page-button {
+	text-align: center;
 }
 
 select {
@@ -447,6 +450,11 @@ form textarea {
 
 	.gallery {
 		grid-template-columns: auto auto;  
+	}
+
+	form input.submitBtn {
+		width: 50%;
+		border-radius: 10px;
 	}
 
 }
