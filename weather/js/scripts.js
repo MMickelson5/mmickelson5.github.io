@@ -5,6 +5,10 @@ function toggleMenu() {
         .classList.toggle('responsive')
 }
 
+function adjustRating(severevalue) {
+    document.getElementById("severevalue").innerHTML = severevalue;
+}
+
 function setDate() {
     const date = new Date();
     let weekdays = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
