@@ -35,5 +35,10 @@ fetch(requestURL)
             let event = document.createElement("li");
             event.textContent = 'Events: ' + towns[i].events;
             card.appendChild(event);
+
+            let image = document.createElement("img");
+            image.setAttribute("src", towns[i].photo);
+            image.setAttribute("alt", towns[i].name + " " + towns[i].motto)
+            card.appendChild(image)
         }
     });

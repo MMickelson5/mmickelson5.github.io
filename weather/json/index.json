@@ -2,7 +2,7 @@
   "towns": [
     {
       "name": "Soda Springs",
-      "photo": "sodasprings.jpg",
+      "photo": "https://picsum.photos/id/10/800/600",
       "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
       "yearFounded": 1858,
       "currentPopulation": 2985,
@@ -15,7 +15,7 @@
     },
     {
       "name": "Fish Haven",
-      "photo": "fishhaven.jpg",
+      "photo": "https://picsum.photos/id/1000/800/600",
       "motto": "This is Fish Heaven.",
       "yearFounded": 1864,
       "currentPopulation": 501,
@@ -29,7 +29,7 @@
     },
     {
       "name": "Preston",
-      "photo": "preston.jpg",
+      "photo": "https://picsum.photos/id/1015/800/600",
       "motto": "Home of Napoleon Dynamite.",
       "yearFounded": 1866,
       "currentPopulation": 5204,
