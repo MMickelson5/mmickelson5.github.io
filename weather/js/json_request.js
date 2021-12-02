@@ -8,8 +8,7 @@ fetch(requestURL)
         console.table(jsonObject); // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
-            if (towns[i].name == 'Preston' || towns[i].name == 'Fish Haven' || towns[i].name == 'Soda Springs') {
-                let card = document.createElement('article');
+            let card = document.createElement('article');
             let h2 = document.createElement('h2');
 
             h2.textContent = towns[i].name;
@@ -36,6 +35,5 @@ fetch(requestURL)
             let event = document.createElement("p");
             event.textContent = 'Events: ' + towns[i].events;
             card.appendChild(event);
-            }
         }
     });
