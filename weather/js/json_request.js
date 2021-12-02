@@ -17,7 +17,7 @@ fetch(requestURL)
             document.querySelector('div.main-container').appendChild(card);
 
             let motto = document.createElement("li");
-            motto.textContent = 'Motto: ' + towns[i].moto;
+            motto.textContent = 'Motto: ' + towns[i].motto;
             card.appendChild(motto);
 
             let founded = document.createElement("li");
