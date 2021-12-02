@@ -563,7 +563,8 @@ article li {
 
 	.main-container {
 		display: grid;
-		grid-template-columns: auto;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
 	}
 
 	article {
@@ -573,7 +574,6 @@ article li {
 		padding: 10px;
 		margin-left: 10px;
 		margin-right: 10px;
-		max-width: 325px;
 	}
 
 	article img {
