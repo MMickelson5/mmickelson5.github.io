@@ -488,12 +488,12 @@ article li {
 		max-width: 100%;
 	}
 	
-	.main-container:nth-child(odd) img {
-		grid-column: 1;
+	.data:nth-child(odd) img {
+		grid-column: 2;
 	}
 	
-	.main-container:nth-child(odd) .data {
-		grid-column: 2;
+	.data:nth-child(odd) .data {
+		grid-row: 1;
 	}
 
 }
