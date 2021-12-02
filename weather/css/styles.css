@@ -304,6 +304,7 @@ article p {
 article img {
 	width: 100%;
 	max-width: 300px;
+	border-radius: 10px;
 }
 
 article li {
@@ -487,16 +488,12 @@ article li {
 		max-width: 100%;
 	}
 	
-	article:nth-child(odd) img {
+	.main-container:nth-child(odd) img {
 		grid-column: 2;
 	}
 	
-	article:nth-child(odd) .data {
+	.main-container:nth-child(odd) .data {
 		grid-row: 1;
-	}
-
-	article img {
-		border-radius: 10px;
 	}
 
 }
