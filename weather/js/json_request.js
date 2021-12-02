@@ -16,23 +16,23 @@ fetch(requestURL)
 
             document.querySelector('div.main-container').appendChild(card);
 
-            let motto = document.createElement("p");
+            let motto = document.createElement("li");
             motto.textContent = 'Motto: ' + towns[i].moto;
             card.appendChild(motto);
 
-            let founded = document.createElement("p");
+            let founded = document.createElement("li");
             founded.textContent = 'Year Founded: ' + towns[i].yearFounded;
             card.appendChild(founded);
 
-            let population = document.createElement("p");
+            let population = document.createElement("li");
             population.textContent = 'Population: ' + towns[i].currentPopulation;
             card.appendChild(population);
 
-            let rain = document.createElement("p");
+            let rain = document.createElement("li");
             rain.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
             card.appendChild(rain);
 
-            let event = document.createElement("p");
+            let event = document.createElement("li");
             event.textContent = 'Events: ' + towns[i].events;
             card.appendChild(event);
         }
