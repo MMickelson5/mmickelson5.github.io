@@ -11,6 +11,7 @@ fetch(requestURL)
             let card = document.createElement('article');
             let h2 = document.createElement('h2');
             let div = document.createElement('div');
+            div.setAttribute("class", 'data')
 
             h2.textContent = towns[i].name;
             div.appendChild(h2);
