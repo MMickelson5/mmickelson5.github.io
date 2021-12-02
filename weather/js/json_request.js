@@ -16,9 +16,9 @@ fetch(requestURL)
 
             document.querySelector('div.main-container').appendChild(card);
 
-            let moto = document.createElement("p");
-            moto.textContent = 'Moto: ' + towns[i].moto;
-            card.appendChild(moto);
+            let motto = document.createElement("p");
+            motto.textContent = 'Motto: ' + towns[i].moto;
+            card.appendChild(motto);
 
             let founded = document.createElement("p");
             founded.textContent = 'Year Founded: ' + towns[i].yearFounded;
