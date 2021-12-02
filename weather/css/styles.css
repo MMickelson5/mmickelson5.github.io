@@ -286,6 +286,26 @@ form textarea {
 	border: 2px dotted black;
 }
 
+article {
+	display: grid;
+	grid-template-columns: 1fr;
+	border: 2px dotted black;
+	background: lightgray;
+	text-align: center;
+	justify-items: center;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+article p {
+	font-size: 1.25rem;
+}
+
+article img {
+	width: 100%;
+	max-width: 300px;
+}
+
 /* Medium+ views */
 @media only screen and (min-width: 32.5em) {
 	header,
@@ -457,6 +477,19 @@ form textarea {
 		border-radius: 10px;
 	}
 
+	article {
+		grid-template-columns: 1fr 1fr;
+		max-width: 100%;
+	}
+	
+	article:nth-child(odd) img {
+		grid-column: 2;
+	}
+	
+	article:nth-child(odd) .data {
+		grid-row: 1;
+	}
+
 }
 
 /* Desktop views */
@@ -521,6 +554,37 @@ form textarea {
 
 	.gallery picture:hover {
 		box-shadow: 1px 1px 20px 1px black;
+	}
+
+	.main-container {
+		display: grid;
+		grid-template-columns: auto;
+	}
+
+	article {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	#preston {
+		grid-column: 1;
+	}
+
+	#soda-springs {
+		grid-column: 2;
+	}
+
+	#fish-haven {
+		grid-column: 3;
+	}
+
+	article img {
+		width: 100%;
+		max-width: 300px;
 	}
 
 }
