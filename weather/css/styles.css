@@ -573,7 +573,6 @@ article li {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		padding: 10px;
 		margin-left: 10px;
 		margin-right: 10px;
 	}
