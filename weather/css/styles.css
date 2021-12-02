@@ -567,14 +567,13 @@ article li {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
+		gap: 10px;
 	}
 
 	article {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin-left: 10px;
-		margin-right: 10px;
 	}
 
 	article img {
