@@ -8,6 +8,7 @@ fetch(requestURL)
         console.table(jsonObject); // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
+            if (towns[i].name == 'Preston' || towns[i].name == 'Fish Haven' || towns[i].name == 'Soda Springs')
             let card = document.createElement('article');
             let h2 = document.createElement('h2');
 
@@ -16,8 +17,24 @@ fetch(requestURL)
 
             document.querySelector('div.main-container').appendChild(card);
 
-            let data = document.createElement("p");
-            data.textContent = 'Moto: ' + towns[i].moto + '<br>Year Founded: ' + towns[i].yearFounded + '<br>Population: ' + towns[i].currentPopulation + '<br>Average Rainfall: ' + towns[i].averageRainfall + '<br>Events: ' + towns[i].events;
-            card.appendChild(data);
+            let moto = document.createElement("p");
+            moto.textContent = 'Moto: ' + towns[i].moto;
+            card.appendChild(moto);
+
+            let founded = document.createElement("p");
+            founded.textContent = 'Year Founded: ' + towns[i].yearFounded;
+            card.appendChild(founded);
+
+            let population = document.createElement("p");
+            population.textContent = 'Population: ' + towns[i].currentPopulation;
+            card.appendChild(population);
+
+            let rain = document.createElement("p");
+            rain.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+            card.appendChild(rain);
+
+            let event = document.createElement("p");
+            event.textContent = 'Events: ' + towns[i].events;
+            card.appendChild(event);
         }
     });
