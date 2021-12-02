@@ -10,31 +10,34 @@ fetch(requestURL)
         for (let i = 0; i < towns.length; i++) {
             let card = document.createElement('article');
             let h2 = document.createElement('h2');
+            let div = document.createElement('div');
 
             h2.textContent = towns[i].name;
-            card.appendChild(h2);
+            div.appendChild(h2);
 
             document.querySelector('div.main-container').appendChild(card);
 
+            document.querySelector('div.main-container').appendChild(div);
+
             let motto = document.createElement("li");
             motto.textContent = 'Motto: ' + towns[i].motto;
-            card.appendChild(motto);
+            div.appendChild(motto);
 
             let founded = document.createElement("li");
             founded.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            card.appendChild(founded);
+            div.appendChild(founded);
 
             let population = document.createElement("li");
             population.textContent = 'Population: ' + towns[i].currentPopulation;
-            card.appendChild(population);
+            div.appendChild(population);
 
             let rain = document.createElement("li");
             rain.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
-            card.appendChild(rain);
+            div.appendChild(rain);
 
             let event = document.createElement("li");
             event.textContent = 'Events: ' + towns[i].events;
-            card.appendChild(event);
+            div.appendChild(event);
 
             let image = document.createElement("img");
             image.setAttribute("src", towns[i].photo);
