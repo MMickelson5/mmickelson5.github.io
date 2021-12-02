@@ -306,6 +306,11 @@ article img {
 	max-width: 300px;
 }
 
+article li {
+	list-style-type: none;
+	padding-top: 10px;
+}
+
 /* Medium+ views */
 @media only screen and (min-width: 32.5em) {
 	header,
