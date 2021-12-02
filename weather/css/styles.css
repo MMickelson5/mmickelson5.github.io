@@ -489,7 +489,7 @@ article li {
 	}
 	
 	article:nth-child(even) img {
-		grid-column: 2;
+		grid-column: 1;
 	}
 	
 	article:nth-child(even) .data {
