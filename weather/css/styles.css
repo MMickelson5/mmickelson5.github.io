@@ -573,18 +573,7 @@ article li {
 		padding: 10px;
 		margin-left: 10px;
 		margin-right: 10px;
-	}
-	
-	#preston {
-		grid-column: 1;
-	}
-
-	#soda-springs {
-		grid-column: 2;
-	}
-
-	#fish-haven {
-		grid-column: 3;
+		max-width: 325px;
 	}
 
 	article img {
