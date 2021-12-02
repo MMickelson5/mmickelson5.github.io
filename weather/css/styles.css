@@ -488,11 +488,11 @@ article li {
 		max-width: 100%;
 	}
 	
-	.data:nth-child(odd) img {
+	article:nth-child(even) img {
 		grid-column: 2;
 	}
 	
-	.data:nth-child(odd) .data {
+	article:nth-child(even) .data {
 		grid-row: 1;
 	}
 
