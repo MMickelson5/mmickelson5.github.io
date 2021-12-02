@@ -17,8 +17,6 @@ fetch(requestURL)
 
             document.querySelector('div.main-container').appendChild(card);
 
-            document.querySelector('div.main-container').appendChild(div);
-
             let motto = document.createElement("li");
             motto.textContent = 'Motto: ' + towns[i].motto;
             div.appendChild(motto);
@@ -38,6 +36,8 @@ fetch(requestURL)
             let event = document.createElement("li");
             event.textContent = 'Events: ' + towns[i].events;
             div.appendChild(event);
+
+            card.appendChild(div)
 
             let image = document.createElement("img");
             image.setAttribute("src", towns[i].photo);
