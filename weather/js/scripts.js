@@ -21,10 +21,5 @@ function setDate() {
 
     document.getElementById('getYear').textContent = year;
     document.getElementById('date').innerHTML = today + ', ' + day + ' ' + month + ' ' + year
-
-    if (day == 5 || 6){
-        document.getElementById('heads-up').style.display = 'block';
-        document.getElementById('heads-up').style.fontWeight = 'bold';
-    }
 }
-window.onload(setDate())
+window.addEventListener('load', setDate)
