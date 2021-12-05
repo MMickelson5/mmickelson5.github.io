@@ -404,7 +404,7 @@ article li {
 		font-size: 1rem;
     	font-family: 'Imprima', serif;
 		border: 2px solid white;
-		word-wrap: none;
+		white-space: nowrap;
 		padding: 20px;
 		background-color: darkslategray;
 		color: white;
