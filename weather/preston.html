@@ -25,7 +25,7 @@
 
 <!-- SCRIPT -->
 <script src="js/scripts.js" defer></script>
-<script src="js/wind_chill.js" defer></script>
+<script src="js/weather.js" defer></script>
 <script src="js/preston_alert.js" defer></script>
      
 </head>
@@ -66,32 +66,30 @@
         </picture>
             <section class="cur-weather">
                 <h2>Weather Summary</h2><hr>
-                <p>Currently: <span id="current">Cloudy </span><span id="temperature">20</span>°F</p>
-                <p>High: <span id="age">65°F</span></p>
+                <p>Currently: <span id="current"></span><span id="temperature"></span>°F</p>
+                <p>High: <span id="high"></span>°F</p>
                 <p>Wind Chill: <span id="chill"></span>°F</p>
-                <p>Humidity: <span id="humidity">15%</span></p>
-                <p>Wind Speed: <span id="wind">12</span> Mph</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind"></span> Mph</p>
             </section>
         <section class="forecast">
             <h3 class="forecast"><i>5 Day Forecast</i></h3>
-                <div class="forecast">
-                    <table>
-                        <tr>
-                            <th>Mon</th>
-                            <th>Tues</th>
-                            <th>Wed</th>
-                            <th>Thurs</th>
-                            <th>Fri</th>
-                        </tr>
-                        <tr>
-                            <td>&#127780;<br>65 &#176;F</td>
-                            <td>&#127774;<br>68 &#176;F</td>
-                            <td>&#127784;<br>62 &#176;F</td>
-                            <td>&#127774;<br>68 &#176;F</td>
-                            <td>&#127774;<br>70 &#176;F</td>
-                        </tr>
-                    </table>
-                </div>
+                <div id="forecast">
+                    <div class="row">
+                        <div class="cell" id="day1"></div>
+                        <div class="cell" id="day2"></div>
+                        <div class="cell" id="day3"></div>
+                        <div class="cell" id="day4"></div>
+                        <div class="cell" id="day5"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell"><span id="day1-value"></span>°F<br><img id="day1-img" src="images/placeholder.png" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day2-value"></span>°F<br><img id="day2-img" src="images/placeholder.png" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day3-value"></span>°F<br><img id="day3-img" src="images/placeholder.png" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day4-value"></span>°F<br><img id="day4-img" src="images/placeholder.png" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day5-value"></span>°F<br><img id="day5-img" src="images/placeholder.png" alt="Weather symbol"></div>
+                    </div>
+                  </div>
         </section>
 
         <section class="body-sections">
@@ -141,6 +139,7 @@
             <span id="date"></span>
         </p>
     </div>
+    <div>Weather info provided by: <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a></div>
 </footer>
 </body>
 </html>
