@@ -1,5 +1,5 @@
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=6eaba2f545c31bd8f0b0bef8e9c804d2";
-const apiURLforecast = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=6eaba2f545c31bd8f0b0bef8e9c804d2";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=6eaba2f545c31bd8f0b0bef8e9c804d2";
+const apiURLforecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=6eaba2f545c31bd8f0b0bef8e9c804d2";
 
 function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
