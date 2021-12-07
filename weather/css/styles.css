@@ -399,7 +399,7 @@ article li {
         display: table;
         text-align: center;
 		margin-bottom: 20px;
-		width: fit-content;
+		width: auto;
 	}
 
 	#forecast div {
