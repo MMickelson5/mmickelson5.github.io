@@ -5,7 +5,7 @@ function showAlert() {
     document.getElementById('heads-up').style.display = 'block';
 }
 
-if ([5,6].includes(parseInt(day))){
+if (day == 5){
     window.addEventListener('load', showAlert)
     console.log('You did something wrong!')
 }
