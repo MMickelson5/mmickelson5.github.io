@@ -395,6 +395,10 @@ article li {
 		display: none;
 	}
 
+	.forecast {
+		width: 100%;
+	}
+
 	#forecast {
         display: table;
         text-align: center;
