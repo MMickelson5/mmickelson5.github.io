@@ -416,6 +416,7 @@ article li {
 		padding: 20px;
 		background-color: darkslategray;
 		color: white;
+		width: 100%;
 	}
 
 	.fiveDay table, th, td {
