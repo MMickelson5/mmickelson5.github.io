@@ -6,6 +6,6 @@ function showAlert() {
     document.getElementById('heads-up').style.fontWeight = 'bold';
 }
 
-if (day == 5 || 6){
+if (day === 5 || 6){
     window.addEventListener('load', showAlert)
 }
