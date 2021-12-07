@@ -7,4 +7,7 @@ function showAlert() {
         document.getElementById('heads-up').style.fontWeight = 'bold';
     }
 }
-window.addEventListener('load', showAlert)
+
+if (day == 5){
+    window.addEventListener('load', showAlert)
+}
