@@ -10,5 +10,4 @@ if (day === 5 || day === 6){
 }
 else {
     document.getElementById('heads-up').style.display = 'none';
-    break
 }
