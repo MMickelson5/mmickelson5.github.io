@@ -9,3 +9,6 @@ function showAlert() {
 if (day === 5 || 6){
     window.addEventListener('load', showAlert)
 }
+else {
+    break
+}
