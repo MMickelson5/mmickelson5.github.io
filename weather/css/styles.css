@@ -104,6 +104,7 @@ nav {
 
 #active {
     text-decoration: overline;
+	color: gold;
 }
 
 #heads-up {
