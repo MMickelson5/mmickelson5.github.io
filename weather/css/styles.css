@@ -110,6 +110,7 @@ nav {
 #heads-up {
 	display: none;
 	font-size: 1.2em;
+	font-weight: bold;
     margin: 0 auto;
 	text-align: center;
     padding: 3px;
