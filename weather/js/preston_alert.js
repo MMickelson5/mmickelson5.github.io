@@ -5,7 +5,7 @@ function showAlert() {
     document.getElementById('heads-up').style.display = 'block';
 }
 
-if (day === 5 || 6){
+if (day === 5 || day === 6){
     window.addEventListener('load', showAlert)
 }
 else {
