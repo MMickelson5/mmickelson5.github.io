@@ -400,6 +400,8 @@ article li {
         text-align: center;
 		margin-bottom: 20px;
 		width: auto;
+		margin-right: auto;
+		margin-left: auto;
 	}
 
 	#forecast div {
