@@ -43,7 +43,7 @@ ul {
 }
 
 .body-sections {
-	border: 2px dotted black;
+	border: 1px solid black;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	background-color: lightgray;
@@ -190,7 +190,7 @@ nav {
 	padding: 15px;
 	background-color: lightgray;
 	border-radius: 10px;
-	border: 2px dotted black;
+	border: 1px solid black;
 }
 
 .gallery img[data-src] {
@@ -211,7 +211,7 @@ nav {
 
 form .information {
     margin: 20px auto;
-    border: 2px dotted black;
+    border: 2px solid black;
 	background-color: lightgray;
     padding: 10px 20px;
 	font-family: 'Imprima', serif;
@@ -234,7 +234,7 @@ form label.top input,
 form label.top select {
     display: block;
 	font-family: 'Imprima', serif;
-    border: 2px dotted black;
+    border: 1px solid black;
     border-radius: 4px;
     padding: .75rem;
     color: gray;
@@ -278,7 +278,7 @@ form label.top input:required:valid {
 
 form textarea {
 	border-radius: 10px;
-	border: 2px dotted black;
+	border: 1px solid black;
 }
 
 .thanks {
@@ -289,13 +289,13 @@ form textarea {
 	text-align: center;
 	background-color: lightgray;
 	border-radius: 10px;
-	border: 2px dotted black;
+	border: 1px solid black;
 }
 
 article {
 	display: grid;
 	grid-template-columns: 1fr;
-	border: 2px dotted black;
+	border: 1px solid black;
 	background: lightgray;
 	text-align: center;
 	justify-items: center;
@@ -316,6 +316,18 @@ article img {
 article li {
 	list-style-type: none;
 	padding-top: 10px;
+}
+
+.article-text {
+	padding: 0 5px 0 5px;
+}
+
+.article-text li {
+	list-style: none;
+}
+
+.article-text ul {
+	padding: 0;
 }
 
 /* Medium+ views */
@@ -476,16 +488,16 @@ article li {
 		order: 2;
 	}
 
-	#article-body {
+	.article-body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		text-align: justify;
 	}
 
-	#article-text {
-		width: 90%;
-		padding-right: 20px;
+	.article-text {
+		width: 100%;
+		font-weight: 300;
 	}
 
 	.gallery {
