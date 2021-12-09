@@ -34,10 +34,6 @@ fetch(requestURL)
             rain.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
             div.appendChild(rain);
 
-            let event = document.createElement("li");
-            event.textContent = 'Events: ' + towns[i].events;
-            div.appendChild(event);
-
             card.appendChild(div)
 
             let image = document.createElement("img");
