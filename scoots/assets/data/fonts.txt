@@ -1,0 +1,6 @@
+Logo main font - Permanent Marker
+Logo text font - Merienda One
+
+Page header font - Rockwell Bold
+Page text font - Bembo
+Page details font - PT Mono, Fira Code, Noto Sans Mono

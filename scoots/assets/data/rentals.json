@@ -1,0 +1,88 @@
+{
+    "rentals" : [
+        {
+            "brand": "Honda",
+            "model": "Metro",
+            "vehicle":"Scooter",
+            "capacity": 1,
+            "reservation": [
+                "half-day: $20",
+                "full-day: $30"
+            ],
+            "walk-in": [
+                "half-day: $25",
+                "full-day: $35"
+            ]
+        },
+        {
+            "brand": "Honda",
+            "model": "Dio",
+            "vehicle":"Scooter",
+            "capacity": 2,
+            "reservation": [
+                "half-day: $30",
+                "full-day: $40"
+            ],
+            "walk-in": [
+                "half-day: $35",
+                "full-day: $45"
+            ]
+        },
+        {
+            "brand": "Honda",
+            "model": "PCX150",
+            "vehicle":"Scooter",
+            "capacity": 2,
+            "reservation": [
+                "half-day: $40",
+                "full-day: $50"
+            ],
+            "walk-in": [
+                "half-day: $45",
+                "full-day: $55"
+            ]
+        },
+        {
+            "brand": "Honda",
+            "model": "Pioneer",
+            "vehicle":"ATV",
+            "capacity": 4,
+            "reservation": [
+                "half-day: $50",
+                "full-day: $70"
+            ],
+            "walk-in": [
+                "half-day: $60",
+                "full-day: $80"
+            ]
+        },
+        {
+            "brand": "Jeep",
+            "model": "Wrangler-2 Door",
+            "vehicle":"SUV",
+            "capacity": 4,
+            "reservation": [
+                "half-day: $60",
+                "full-day: $85"
+            ],
+            "walk-in": [
+                "half-day: $70",
+                "full-day: $95"
+            ]
+        },
+        {
+            "brand": "Jeep",
+            "model": "Wrangler-4 Door with A/C",
+            "vehicle":"SUV",
+            "capacity": 5,
+            "reservation": [
+                "half-day: $70",
+                "full-day: $100"
+            ],
+            "walk-in": [
+                "half-day: $85",
+                "full-day: $125"
+            ]
+        }
+    ]
+}
