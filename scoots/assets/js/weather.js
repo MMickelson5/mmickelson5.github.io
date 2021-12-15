@@ -59,17 +59,12 @@ fetch(apiURL)
 
         document.getElementById('high').innerHTML = convertToFahrenheit(jsObject.main.temp_max).toFixed(0);
 
+        document.getElementById('low').innerHTML = convertToFahrenheit(jsObject.main.temp_min).toFixed(0);
+
         document.getElementById('humidity').innerHTML = jsObject.main.humidity;
 
         let speed = jsObject.wind.speed * 2.237;
         document.getElementById('wind').innerHTML = speed.toFixed(1);
-
-
-        let temp = convertToFahrenheit(jsObject.main.temp);
-        
-        let chill = 35.74 + (.6215 * temp) - (35.75 * speed ** .16) + (.4275 * temp * speed ** .16)
-        
-        document.getElementById('chill').innerText = chill.toFixed(0)
     });
 
 var temperatures = []
@@ -88,14 +83,14 @@ fetch(apiURLforecast)
     console.log(jsObject);
     jsObject.list.forEach((entry) => {
         if (String(entry.dt_txt).includes('18:00:00')) {
-            document.getElementById('day' + index).textContent = getDayOfWeek(day_of_week);
+            document.getElementById('day' + index).innerHTML = getDayOfWeek(day_of_week);
 
             document.getElementById('day' + index + '-value').textContent = Math.round(convertToFahrenheit(parseFloat(entry.main.temp)))
 
             const imagesrc = 'https://openweathermap.org/img/w/' + entry.weather[0].icon + '.png';
             const desc = entry.weather[0].description;
 
-            document.getElementById('day'+ index +'-img').textContent = imagesrc;
+            document.getElementById('day'+ index +'-img').innerHTML = imagesrc;
             document.getElementById('day' + index + '-img').setAttribute('src', imagesrc);
             document.getElementById('day' + index + '-img').setAttribute('alt', desc);
         

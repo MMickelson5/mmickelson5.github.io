@@ -7,13 +7,12 @@
     <meta name="description" content="Home page for Scoots Rental Company.">
     <title>Home | Scoots</title>
 
-    <!-- Fonts -->
-
     <!-- Tab icons -->
+    <link rel="icon" class="js-site-favicon" type="image/png" href="assets/images/logo-tiny.png">
 
     <!-- CSS -->
         <!-- Normalize -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <!-- Large -->
     <link rel="stylesheet" href="assets/css/large.css">
         <!-- Medium -->
@@ -22,8 +21,68 @@
     <link rel="stylesheet" href="assets/css/small.css">
 
     <!-- Scripts -->
+    <script src="assets/js/menu.js" async></script>
+    <script src="assets/js/weather.js"></script>
 </head>
 <body>
-    
+    <header>
+        <img src="assets/images/title-large.png" alt="Image of Scoots logo">
+
+        <nav>
+            <ul class="navigation">
+                <li><a class="nav-toggler" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a id="active" href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <picture>
+            <source media="(max-width: 449px)" srcset="assets/images/hero-small.png">
+            <source media="(min-width: 650px)" srcset="assets/images/hero-medium.png">
+            <source media="(min-width: 1000px)" srcset="assets/images/hero-large.png">
+            <img src="assets/images/hero-large.png" alt="">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <section class="weather">
+            <h2>Weather Summary</h2><hr>
+            <p>Currently: <span id="current"></span><span id="temperature"></span>°F</p>
+            <p>High: <span id="high"></span>°F</p>
+            <p>Low: <span id="low"></span>°F</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="wind"></span> Mph</p>
+        </section>
+
+        <section class="forecast">
+            <h3 class="forecast"><i>5 Day Forecast</i></h3>
+            <div id="forecast">
+                <div class="row">
+                    <div class="cell"><span id="day1-value"></span>°F<br><img id="day1-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day2-value"></span>°F<br><img id="day2-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day3-value"></span>°F<br><img id="day3-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day4-value"></span>°F<br><img id="day4-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day5-value"></span>°F<br><img id="day5-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" id="day1"></div>
+                    <div class="cell" id="day2"></div>
+                    <div class="cell" id="day3"></div>
+                    <div class="cell" id="day4"></div>
+                    <div class="cell" id="day5"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <script> </script>
+    </footer>
 </body>
 </html>
