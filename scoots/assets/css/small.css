@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
 
 :root {
-    --main-color:#1463ad;
-    --secondary-color: #20B2AA;
+    --background-color: #fff;
+    --main-color: #1463ad;
+    --secondary-color: #000;
     --accent1-color: #e0c59c;
-    --accent2-color: #FFF;
+    --accent2-color: #20b2aa;
 
     --heading-font: 'Merienda', Arial, Helvetica, sans-serif;
     --body-font: 'EB Garamond', Verdana, Tahoma, sans-serif;
@@ -14,6 +15,7 @@
 body {
     width: 100%;
     min-width: 360px;
+    background: --;
 }
 
     header {
@@ -93,7 +95,7 @@ body {
         #forecast div {
             font-size: 1rem;
             font-family: 'Imprima', serif;
-            border: 2px solid white;
+            border: 2px solid var(--secondary-color);
             white-space: nowrap;
             padding: 20px;
         }
@@ -101,3 +103,9 @@ body {
         .row {display: table-row;}
 
         .cell {display: table-cell;}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--background-color);
+    }
+}
