@@ -14,27 +14,22 @@
 
 @media only screen and (min-width: 32.5em) {
 
-    header {
-        display: flex;
-        text-align: center;
-        justify-content: left;
-        padding: 0;
-		margin-top: 10px;
+    body {
+        max-width: 1100px;
     }
 
-        .navigation {
-            display: flex;
+        header {
+            margin-top: 18px;
         }
-        .navigation li {
-            display: block; /* change state in small view */
-            flex: 1 1 auto;
+
+        nav {
+            border-radius: 18px;
         }
-        .navigation a {
-            text-align: center;
+
+        h2 {
+            font-size: 2rem;
         }
-        .navigation #first {
-            display: none;
-        }
+
 
     main {
         max-width: 100%;
