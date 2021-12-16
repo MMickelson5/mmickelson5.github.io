@@ -191,13 +191,13 @@ body {
                 cursor: pointer;
             }
 
-        .contact-form {
-            text-align: left;
-        }
-
         .contact-form label,
         .contact-form input {
             margin-bottom: 10px;
+        }
+
+        .contact-form fieldset {
+            border: 0px;
         }
 
         .submitBtn {
@@ -248,11 +248,21 @@ body {
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #000;
-        --secondary-color: #fff;
+        --secondary-color: #eee;
     }
 
+    nav ul li a,
+    nav button {
+        color: var(--secondary-color);
+    }
+    
     body {
-        background: var(--background-color);
+        background: #353535;
+    }
+
+    form input.submitBtn {
+        color: var(--secondary-color);
+        font-weight: bold;
     }
 
     footer p,
