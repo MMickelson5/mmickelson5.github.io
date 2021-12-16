@@ -254,4 +254,12 @@ body {
     body {
         background: var(--background-color);
     }
+
+    footer p,
+    span,
+    div,
+    legend,
+    label {
+        color: #eee;
+    }
 }
