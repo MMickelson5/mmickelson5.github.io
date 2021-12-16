@@ -12,10 +12,14 @@
     --body-font: 'EB Garamond', Verdana, Tahoma, sans-serif;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 body {
     width: 100%;
     min-width: 360px;
-    background: --;
+    background: var(--background-color);
 }
 
     h1,h2,h3 {
@@ -29,40 +33,39 @@ body {
     }
 
         nav {
-            margin: 0 auto;
+            margin: 18px auto;
             background-color: var(--main-color);
-            font-family: 'Nunito', 'Open Sans', sans-serif;
+            font-family: var(--heading-font);
+            padding: .5rem 0 .5rem;
+            text-align: center;
         }
 
-            .navigation {
-                font-family: var(--heading-font);
-                font-weight: bold;
-                padding: 0;
+            nav ul, li {
+                list-style-type: none;
+                text-align: center;
+                margin: 0;
+                padding: .5rem 0 .25rem;
             }
 
-            .navigation li:first-child {
-                display: block;
-            }
-
-            .navigation li {
-                display: none;
-            }
-
-            .navigation a {
-                display: block;
-                padding: .75rem;
-                text-align: left;
+            nav ul li a {
                 text-decoration: none;
                 color: var(--background-color);
+                transition: .5s;
+                transition-duration: .5s;
             }
 
-            .navigation a:hover {
-                color: var(--main-color);
-                background: var(--background-color);
+            nav a:hover {
+                font-size: 1.5rem;
             }
 
-            .responsive li {
-                display: block;
+            nav button {
+                background: var(--main-color);
+                color: var(--background-color);
+                border: none;
+            }
+
+            nav ul.navigation {
+                display: none;
             }
 
             #active {
@@ -73,6 +76,19 @@ body {
         max-width: 100%;
         text-align: center;
     }
+
+        .forecast {
+            display: table;
+            text-align: center;
+            margin-bottom: 18px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+        }
+
+        .forecast img {
+            width: 50px;
+        }
 
         main img {
             width: 100%;
@@ -88,25 +104,43 @@ body {
             color: var(--secondary-color);
         }
 
-        #forecast {
-            display: table;
-            text-align: center;
-            margin-bottom: 20px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-    
-        #forecast div {
-            font-size: 1rem;
-            font-family: 'Imprima', serif;
-            border: 2px solid var(--secondary-color);
-            white-space: nowrap;
-            padding: 20px;
+        div {
+            display: block;
         }
 
         .row {display: table-row;}
 
         .cell {display: table-cell;}
+
+    .rental-info {
+        font-family: var(--body-font);
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    .rental-info table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        max-width: 100%;
+    }
+
+        .gallery-image {
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            max-width: 400px;
+        }
 
 @media (prefers-color-scheme: dark) {
     :root {

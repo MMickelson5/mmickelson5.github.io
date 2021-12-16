@@ -33,8 +33,8 @@
         </picture>
 
         <nav>
-            <ul class="navigation">
-                <li><a class="nav-toggler" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <button onclick="toggleMenu()" class="nav-toggler">&#9776; Menu</button>
+            <ul id="page-nav" class="navigation">
                 <li><a id="active" href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="tours.html">Tours</a></li>
@@ -43,9 +43,9 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main-index">
 
-        <picture>
+        <picture id="img-index">
             <source media="(max-width: 449px)" srcset="assets/images/hero-small.png">
             <source media="(min-width: 650px)" srcset="assets/images/hero-medium.png">
             <source media="(min-width: 1000px)" srcset="assets/images/hero-large.png">
@@ -61,16 +61,9 @@
             <p>Wind Speed: <span id="wind"></span> Mph</p>
         </section>
 
-        <section class="forecast">
-            <h2 class="forecast"><i>5 Day Forecast</i></h2>
-            <div id="forecast">
-                <div class="row">
-                    <div class="cell"><span id="day1-value"></span>°F<br><img id="day1-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
-                    <div class="cell"><span id="day2-value"></span>°F<br><img id="day2-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
-                    <div class="cell"><span id="day3-value"></span>°F<br><img id="day3-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
-                    <div class="cell"><span id="day4-value"></span>°F<br><img id="day4-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
-                    <div class="cell"><span id="day5-value"></span>°F<br><img id="day5-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
-                </div>
+        <section class="section-forecast">
+            <h2 class="h2-forecast"><i>5 Day Forecast</i></h2>
+            <div class="forecast">
                 <div class="row">
                     <div class="cell" id="day1"></div>
                     <div class="cell" id="day2"></div>
@@ -78,19 +71,26 @@
                     <div class="cell" id="day4"></div>
                     <div class="cell" id="day5"></div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="cell"><span id="day1-value"></span>°F<br><img id="day1-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day2-value"></span>°F<br><img id="day2-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day3-value"></span>°F<br><img id="day3-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day4-value"></span>°F<br><img id="day4-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day5-value"></span>°F<br><img id="day5-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                </div>
+                </div>
         </section>
 
         <section class="island-info">
             <h2>The Island of Cozumel</h2>
-            <p></p>
+            <p>Cozumel is the largest inhabited island in Mexico and has some of the most beautiful beaches in the world. There is a plethora of activites available that are fun for the whole family. With a rental vehicle from Scoots, you can reach every part of the island.</p>
         </section>
 
-        <img src="assets/images/jeep.png" alt="Image taken by Greg Rosenke">
+        <img class="img-adventure" src="assets/images/jeep.png" alt="Image taken by Greg Rosenke">
 
         <article class="about-us">
             <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Hello and welcome to Scoots Rental and Tours! Scoots is the largest distributor of rental vehicles on the island of Cozumel. We offer a wide selection of scooters and 4x4s for your transportation needs while staying on the island. Everything we offer is kept in pristine condition and working order. We have two convenient locations just around the corner from everything you'll need.</p>
         </article>
     </main>
     <footer>

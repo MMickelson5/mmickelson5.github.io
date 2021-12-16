@@ -14,7 +14,7 @@
 
     <!-- CSS -->
         <!-- Normalize -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <!-- Large -->
     <link rel="stylesheet" href="assets/css/large.css">
         <!-- Medium -->
@@ -35,8 +35,8 @@
         </picture>
 
         <nav>
-            <ul class="navigation">
-                <li><a class="nav-toggler" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <button onclick="toggleMenu()" class="nav-toggler">&#9776; Menu</button>
+            <ul id="page-nav" class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="tours.html">Tours</a></li>
@@ -50,9 +50,10 @@
         <div class="contact-info">
             <h2>Our Contact Information</h2>
             <ul>
-                <li>Name: </li>
-                <li>Address: </li>
-                <li>Email: </li>
+                <li>Name: <b>Scoots Rental and Tours</b></li>
+                <li>Address: <b>555 55th St., Cozumel</b></li>
+                <li>Email: <b>scoots@example.com</b></li>
+                <li>Email: <b>+52 CALL-SCOOTS</b></li>
             </ul>
         </div>
 
