@@ -49,18 +49,20 @@
     <main>
         <div class="reservation-info">
             <h2>Important Information</h2>
-            <ul>
-                <li>A $50 security deposit is required to confirm reservations.</li>
-                <li>A valid drivers license is required in hand at time of rental.</li>
-                <li>No one under 12 years of age is allowed to ride on the scooters.</li>
-                <li>Fuel charge not included.</li>
-                <li>Unlimited mileage.</li>
-                <li>Liability insurance is free of charge.</li>
-                <li>Reservations rate requires 24 hour prior notification.</li>
-                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
-                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
-                <li>Rentals may be returned to either location.</li>
-            </ul>
+            <div>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at time of rental.</li>
+                    <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                    <li>Fuel charge not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is free of charge.</li>
+                    <li>Reservations rate requires 24 hour prior notification.</li>
+                    <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                    <li>Rentals may be returned to either location.</li>
+                </ul>
+            </div>
         </div>
 
         <form method="get" action="confirmation.html">
@@ -85,15 +87,13 @@
             <fieldset class="information">
                 <legend>Reservation</legend>
                 <label class="top">
-                    Rental Date <input type="date" name="stormDate">
-                </label>
-                <label class="sbs">
-                    <input type="radio" id="half-day-choice" name="reservation"> Half Day (3 hrs)
+                    Rental Date <input type="date" name="rental-date">
                 </label>
 
-                <label class="sbs">
-                    <input type="radio" id="full-day-choice" name="reservation"> Full Day
-                </label>
+                <label class="sbs"><input type="radio" name="level" value="yes">Half Day (3 hrs)</label>
+
+                <label class="sbs"><input type="radio" name="level" value="maybe">Full Day</label>
+
                 <datalist id="tickmarks">
                     <option value="0">
                     <option value="1">
@@ -107,24 +107,24 @@
                     <option value="9">
                     <option value="10">
                 </datalist>
-                <label class="top" for="regions">
+                <label class="top" for="party">
                     Number of People in Party:
-                    <select id="regions" name="regions">
-                        <option value="" disabled selected>Select Number</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
+                <select id="party" name="party">
+                    <option value="" disabled selected>Select Number</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
 
                 </label>
-                <div>Additional Information: </div>
                 <label class="top" for="additional">Additional information or comments:</label>
-                <textarea id="additional" name="additional" rows="4" cols="38"></textarea>
+                <br>
+                <textarea id="additional" name="additional" rows="4" cols="45"></textarea>
             </fieldset>
             <div class="confirmation-button">
-                <input type="submit" name="submit" value="submit" class="submitBtn">
+                <input type="submit" name="submit" value="Submit" class="submitBtn">
             </div>
         </form>
     </main>

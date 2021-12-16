@@ -44,9 +44,10 @@
         padding: 0 18px 0;
     }
 
-        #img-index {
+        .img-index {
             grid-column: 1 / 4;
             grid-row: 1;
+            border-radius: 18px;
         }
 
         .weather {
@@ -67,6 +68,7 @@
         .img-adventure {
             grid-column: 3 / 4;
             grid-row: 3;
+            border-radius: 18px;
         }
 
         .about-us {
@@ -129,6 +131,20 @@
         #vehicle-3 {
             grid-column: 3;
         }
+
+    fieldset {
+        border-radius: 18px;
+    }
+
+    .submitBtn {
+        border-radius: 18px;
+    }
+
+    footer {
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+    }
+
 }
 @media (prefers-color-scheme: dark) {
     :root {
