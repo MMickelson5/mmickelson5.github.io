@@ -7,4 +7,8 @@ function setDate() {
     let day = date.getDate();
     let month = months[date.getMonth()];
     let year = date.getFullYear();
+
+    document.getElementById('get-year').textContent = year;
+    document.getElementById('date').innerHTML = today + ', ' + day + ' ' + month + ' ' + year
 }
+window.addEventListener('load', setDate)

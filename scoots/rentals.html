@@ -10,10 +10,11 @@
     <!-- Fonts -->
 
     <!-- Tab icons -->
+    <link rel="icon" class="js-site-favicon" type="image/png" href="assets/images/logo-tiny.png">
 
     <!-- CSS -->
         <!-- Normalize -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <!-- Large -->
     <link rel="stylesheet" href="assets/css/large.css">
         <!-- Medium -->
@@ -22,8 +23,74 @@
     <link rel="stylesheet" href="assets/css/small.css">
 
     <!-- Scripts -->
+    <script src="assets/js/menu.js" async></script>
+    <script src="assets/js/date.js" async></script>
+    <script src="assets/js/data.js" async></script>
 </head>
+
 <body>
-    
+    <header>
+
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="assets/images/title-large-light.png">
+            <img class="title-image" src="assets/images/title-large.png" alt="Image of Scoots logo">
+        </picture>
+
+        <nav>
+            <ul class="navigation">
+                <li><a class="nav-toggler" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="active" href="rentals.html">Rentals</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="rental-info">
+        <h2>Rental Information</h2>
+        <table class="table-head">
+            <thead>
+               <tr>
+                  <th class="cell" colspan="2">Max Persons and Price Chart (includes Tax)</th>
+                  <th class="cell" colspan="2">Reservation</th>
+                  <th class="cell" colspan="2">Walk-In</th>
+               </tr>
+            </thead>
+            <tbody id="table-body">
+               <tr>
+                  <td class="cell">Rental Type</td>
+                  <td class="cell">Max. Persons</td>
+                  <td class="cell">Half Day (3 hrs)</td>
+                  <td class="cell">Full Day</td>
+                  <td class="cell">Half Day (3 hrs.)</td>
+                  <td class="cell">Full Day</td>
+               </tr>
+            </tbody>
+         </table>
+    </div>
+
+    <div class="gallery">
+
+    </div>
+
+    <footer>
+        <div id="copyright">
+            <p>
+                &copy;<span id="get-year"></span>
+                | Reece Mickelson | Arizona | <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+            </p>
+        </div>
+        <div id="todays-date">
+            <p>
+                <span id="date"></span>
+            </p>
+        </div>
+        <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/instagram.png" alt="instagram" class="social-icons"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/facebook.png" alt="facebook" class="social-icons"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="assets/images/twitter.png" alt="twitter" class="social-icons"></a>
+        <a href="https://youtube.com/" target="_blank"><img src="assets/images/youtube.png" alt="youtube" class="social-icons"></a>
+    </footer>
 </body>
 </html>
