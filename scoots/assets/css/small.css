@@ -260,7 +260,8 @@ body {
         background: #353535;
     }
 
-    form input.submitBtn {
+    form input.submitBtn,
+    .submitBtn {
         color: var(--secondary-color);
         font-weight: bold;
     }
