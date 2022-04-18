@@ -1,5 +1,5 @@
 # mmickelson5.github.io
-This will eventually contain information reguarding all my personal assignments submitted to WDD 230 by BYU-I.
+This site contains all major projects and assignments submitted to WDD 230 by BYU-I in 2021.
 
 ---
 * author: Reece Mickelson
