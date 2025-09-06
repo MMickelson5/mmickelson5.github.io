@@ -1,0 +1,88 @@
+{
+    "rentals" : [
+        {
+            "brand": "Honda",
+            "model": "Metro",
+            "vehicle":"Scooter",
+            "capacity": 1,
+            "reservation": [
+                "$20",
+                "$30"
+            ],
+            "walkIn": [
+                "$25",
+                "$35"
+            ]
+        },
+        {
+            "brand": "Honda",
+            "model": "Dio",
+            "vehicle":"Scooter",
+            "capacity": 2,
+            "reservation": [
+                "$30",
+                "$40"
+            ],
+            "walkIn": [
+                "$35",
+                "$45"
+            ]
+        },
+        {
+            "brand": "Honda",
+            "model": "PCX150",
+            "vehicle":"Scooter",
+            "capacity": 2,
+            "reservation": [
+                "$40",
+                "$50"
+            ],
+            "walkIn": [
+                "$45",
+                "$55"
+            ]
+        },
+        {
+            "brand": "Honda",
+            "model": "Pioneer",
+            "vehicle":"ATV",
+            "capacity": 4,
+            "reservation": [
+                "$50",
+                "$70"
+            ],
+            "walkIn": [
+                "$60",
+                "$80"
+            ]
+        },
+        {
+            "brand": "Jeep",
+            "model": "Wrangler-2 Door",
+            "vehicle":"SUV",
+            "capacity": 4,
+            "reservation": [
+                "$60",
+                "$85"
+            ],
+            "walkIn": [
+                "$70",
+                "$95"
+            ]
+        },
+        {
+            "brand": "Jeep",
+            "model": "Wrangler-4 Door with A/C",
+            "vehicle":"SUV",
+            "capacity": 5,
+            "reservation": [
+                "$70",
+                "$100"
+            ],
+            "walkIn": [
+                "$85",
+                "$125"
+            ]
+        }
+    ]
+}

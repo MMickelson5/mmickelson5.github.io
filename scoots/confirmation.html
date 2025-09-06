@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Reece Mickelson">
+    <meta name="description" content="Tours page for Scoots Rental Company.">
+    <title>Confirmation | Scoots</title>
+
+    <!-- Fonts -->
+
+    <!-- Tab icons -->
+    <link rel="icon" class="js-site-favicon" type="image/png" href="assets/images/logo-tiny.png">
+
+    <!-- CSS -->
+        <!-- Normalize -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+        <!-- Large -->
+    <link rel="stylesheet" href="assets/css/large.css">
+        <!-- Medium -->
+    <link rel="stylesheet" href="assets/css/medium.css">
+        <!-- Small -->
+    <link rel="stylesheet" href="assets/css/small.css">
+
+    <!-- Scripts -->
+    <script src="assets/js/menu.js" async></script>
+    <script src="assets/js/weather.js" async></script>
+    <script src="assets/js/date.js" async></script>
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="assets/images/title-large-light.png">
+            <img class="title-image" src="assets/images/title-large.png" alt="Image of Scoots logo">
+        </picture>
+
+        <nav>
+            <ul class="navigation">
+                <li><a class="nav-toggler" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a id="active" href="tours.html">Tours</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="confirmation">
+            <h2>Thank You for Your Reservation!</h2>
+            <p>As soon as your information and request have been processed, you will recieve personal contact to confirm your information and setup your reservation. Please do not hesitate to notify our staff of any concerns or changes to your reservation. We hope you enjoy your trip! Welcome to Cozumel!!!</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div id="copyright">
+            <p>
+                &copy;<span id="get-year"></span>
+                | Reece Mickelson | Arizona | <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+            </p>
+        </div>
+        <div id="todays-date">
+            <p>
+                <span id="date"></span>
+            </p>
+        </div>
+        <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/instagram.png" alt="instagram" class="social-icons"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/facebook.png" alt="facebook" class="social-icons"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="assets/images/twitter.png" alt="twitter" class="social-icons"></a>
+        <a href="https://youtube.com/" target="_blank"><img src="assets/images/youtube.png" alt="youtube" class="social-icons"></a>
+    </footer>
+</body>
+</html>

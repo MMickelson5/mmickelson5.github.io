@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Reece Mickelson">
+    <meta name="description" content="Reservations page for Scoots Rental Company.">
+    <title>Reservations | Scoots</title>
+
+    <!-- Fonts -->
+
+    <!-- Tab icons -->
+    <link rel="icon" class="js-site-favicon" type="image/png" href="assets/images/logo-tiny.png">
+
+    <!-- CSS -->
+        <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- Large -->
+    <link rel="stylesheet" href="assets/css/large.css">
+        <!-- Medium -->
+    <link rel="stylesheet" href="assets/css/medium.css">
+        <!-- Small -->
+    <link rel="stylesheet" href="assets/css/small.css">
+
+    <!-- Scripts -->
+    <script src="assets/js/menu.js" async></script>
+    <script src="assets/js/weather.js" async></script>
+    <script src="assets/js/date.js" async></script>
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="assets/images/title-large-light.png">
+            <img class="title-image" src="assets/images/title-large.png" alt="Image of Scoots logo">
+        </picture>
+
+        <nav>
+            <button onclick="toggleMenu()" class="nav-toggler">&#9776; Menu</button>
+            <ul id="page-nav" class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a id="active" href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="reservation-info">
+            <h2>Important Information</h2>
+            <div>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at time of rental.</li>
+                    <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                    <li>Fuel charge not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is free of charge.</li>
+                    <li>Reservations rate requires 24 hour prior notification.</li>
+                    <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                    <li>Rentals may be returned to either location.</li>
+                </ul>
+            </div>
+        </div>
+
+        <form method="get" action="confirmation.html">
+            <fieldset class="information">
+                <legend>Personal Information</legend>
+                <label class="top">
+                    Full Name* <input type="text" name="name" minlength="2" required pattern="[a-zA-Z]+[ ][a-zA-Z]+">
+                </label>
+                <label class="top">
+                    Email <input type="email" name="email" placeholder="someone@gmail.com">
+                </label>
+                <label class="top">
+                    Phone* <input type="tel" name="phone" required>
+                </label>
+                <label class="top">
+                    Home Country <input type="number" name="zipcode">
+                </label>
+                <label class="top">
+                    Cruise (Where applicable) <input type="number" name="zipcode" required>
+                </label>
+            </fieldset>
+            <fieldset class="information">
+                <legend>Reservation</legend>
+                <label class="top">
+                    Rental Date <input type="date" name="rental-date">
+                </label>
+
+                <label class="sbs"><input type="radio" name="level" value="yes">Half Day (3 hrs)</label>
+
+                <label class="sbs"><input type="radio" name="level" value="maybe">Full Day</label>
+
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <label class="top" for="party">
+                    Number of People in Party:
+                <select id="party" name="party">
+                    <option value="" disabled selected>Select Number</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                </label>
+                <label class="top" for="additional">Additional information or comments:</label>
+                <br>
+                <textarea id="additional" name="additional" rows="4" cols="45"></textarea>
+            </fieldset>
+            <div class="confirmation-button">
+                <input type="submit" name="submit" value="Submit" class="submitBtn">
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <div id="copyright">
+            <p>
+                &copy;<span id="get-year"></span>
+                | Reece Mickelson | Arizona | <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+            </p>
+        </div>
+        <div id="todays-date">
+            <p>
+                <span id="date"></span>
+            </p>
+        </div>
+        <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/instagram.png" alt="instagram" class="social-icons"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/facebook.png" alt="facebook" class="social-icons"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="assets/images/twitter.png" alt="twitter" class="social-icons"></a>
+        <a href="https://youtube.com/" target="_blank"><img src="assets/images/youtube.png" alt="youtube" class="social-icons"></a>
+    </footer>
+</body>
+</html>

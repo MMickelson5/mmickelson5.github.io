@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Reece Mickelson">
+    <meta name="description" content="Tours page for Scoots Rental Company.">
+    <title>Tours | Scoots</title>
+
+    <!-- Fonts -->
+
+    <!-- Tab icons -->
+    <link rel="icon" class="js-site-favicon" type="image/png" href="assets/images/logo-tiny.png">
+
+    <!-- CSS -->
+        <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- Large -->
+    <link rel="stylesheet" href="assets/css/large.css">
+        <!-- Medium -->
+    <link rel="stylesheet" href="assets/css/medium.css">
+        <!-- Small -->
+    <link rel="stylesheet" href="assets/css/small.css">
+
+    <!-- Scripts -->
+    <script src="assets/js/menu.js" async></script>
+    <script src="assets/js/weather.js" async></script>
+    <script src="assets/js/date.js" async></script>
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="assets/images/title-large-light.png">
+            <img class="title-image" src="assets/images/title-large.png" alt="Image of Scoots logo">
+        </picture>
+
+        <nav>
+            <button onclick="toggleMenu()" class="nav-toggler">&#9776; Menu</button>
+            <ul id="page-nav" class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a id="active" href="tours.html">Tours</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="island-info">
+            <h2>-About Isla Cozumel-</h2>
+            <p>"Cozumel is a dream destination for divers, with underwater paradises such as the Palancar and Columbia coral reefs to see. Yet while much of the activity on this small island off the Yucatán Peninsula take place in or near the water—especially the round-the-clock parties at the many beach clubs—there are plenty of worthwhile experiences to have away from the coast. The city center of San Miguel offers excellent dining, as well as activities like food tours and cooking classes to join. Farther afield, take a day trip to explore ancient Mayan ruins or beautiful Passion Island." - Trip Advisor</p>
+        </section>
+
+        <img src="" alt="">
+
+        <section class="island-info">
+            <h2>-Sites to See-</h2>
+            <h3>Punta Sur Ecological Park</h3>
+            <p>"Punta Sur Eco Beach is the best beach on the Island, and a visit to this eco-park is definitely one of the top things to do in Cozumel. This area is located on the south of the island and covers an area of 2,500 acres.
+            Here you'll find exotic birds, crocodiles, sea turtles, beautiful flowers and beautiful beaches - the perfect place for nature lovers. If you don't feel like snorkelling the reef or visiting the lighthouse (see below), you can just hang out on hammocks and enjoy the sun. There's an entrance fee for this park ($18 USD for adults and $11 for children), but in my opinion, it's worth it. Click here to find this top Cozumel day trip on the map." - Goats on the Road Blog</p>
+            <h3>San Miguel de Cozumel</h3>
+            <p>"On the northwest side of Cozumel, San Miguel de Cozumel is the island's capital and offers many interesting distractions. In addition to being a tourist hub, it's also a busy port. Many ferries depart regularly to the mainland-particularly to Cancún and Playa del Carmen-and the port also hosts cruise ships as they ply the sparkling waters of the Caribbean Sea (be sure to check out the interesting Coral Reefs Monument located near here). The town also boasts a major international airport." - Planetware</p>
+        </section>
+
+        <img src="" alt="">
+
+        <section class="island-info">
+            <h2>-Activities-</h2>
+            <h3>Snorkeling</h3>
+            <p>One of the best activities available to tourists is offered by a local snorkeling company: "Cozumel Snorkeling Tour: Palancar, Colombia and El Cielo Reefs". They offer four hour snorkeling tours at a reasonable rate for groups up to 15 individuals.</p>
+            <h3>Submarine Expedition</h3>
+            <p>"Make the most of limited time and explore one of Cozumel's most captivating coral reefs with a guide. Descend to depths of 100 feet (30 meters) and cruise along the ocean floor in the air-conditioned comfort of an Atlantis Submarine without getting wet. On this reef tour, you'll learn about the marine ecosystem and see parts of the reef that were previously only accessible to scuba divers." - Atlantis Submarines</p>
+        </section>
+
+        <img src="" alt="">
+    </main>
+    
+    <footer>
+        <div id="copyright">
+            <p>
+                &copy;<span id="get-year"></span>
+                | Reece Mickelson | Arizona | <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+            </p>
+        </div>
+        <div id="todays-date">
+            <p>
+                <span id="date"></span>
+            </p>
+        </div>
+        <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/instagram.png" alt="instagram" class="social-icons"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/facebook.png" alt="facebook" class="social-icons"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="assets/images/twitter.png" alt="twitter" class="social-icons"></a>
+        <a href="https://youtube.com/" target="_blank"><img src="assets/images/youtube.png" alt="youtube" class="social-icons"></a>
+    </footer>
+</body>
+</html>

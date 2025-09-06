@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Reece Mickelson">
+    <meta name="description" content="Home page for Scoots Rental Company.">
+    <title>Home | Scoots</title>
+
+    <!-- Tab icons -->
+    <link rel="icon" class="js-site-favicon" type="image/png" href="assets/images/logo-tiny.png">
+
+    <!-- CSS -->
+        <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- Large -->
+    <link rel="stylesheet" href="assets/css/large.css">
+        <!-- Medium -->
+    <link rel="stylesheet" href="assets/css/medium.css">
+        <!-- Small -->
+    <link rel="stylesheet" href="assets/css/small.css">
+
+    <!-- Scripts -->
+    <script src="assets/js/menu.js" async></script>
+    <script src="assets/js/weather.js" async></script>
+    <script src="assets/js/date.js" async></script>
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="assets/images/title-large-light.png">
+            <img class="title-image" src="assets/images/title-large.png" alt="Image of Scoots logo">
+        </picture>
+
+        <nav>
+            <button onclick="toggleMenu()" class="nav-toggler">&#9776; Menu</button>
+            <ul id="page-nav" class="navigation">
+                <li><a id="active" href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-index">
+
+        <picture class="img-index">
+            <source media="(max-width: 449px)" srcset="assets/images/hero-small.png">
+            <source media="(min-width: 650px)" srcset="assets/images/hero-medium.png">
+            <source media="(min-width: 1000px)" srcset="assets/images/hero-large.png">
+            <img src="assets/images/hero-large.png" alt="Image taken by Sean Oulashin" class="img-index">
+        </picture>
+
+        <section class="weather">
+            <h2>Weather Summary</h2><hr>
+            <p>Currently: <span id="current"></span><span id="temperature"></span>°F</p>
+            <p>High: <span id="high"></span>°F</p>
+            <p>Low: <span id="low"></span>°F</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="wind"></span> Mph</p>
+        </section>
+
+        <section class="section-forecast">
+            <h2 class="h2-forecast"><i>5 Day Forecast</i></h2>
+            <div class="forecast">
+                <div class="row">
+                    <div class="cell" id="day1"></div>
+                    <div class="cell" id="day2"></div>
+                    <div class="cell" id="day3"></div>
+                    <div class="cell" id="day4"></div>
+                    <div class="cell" id="day5"></div>
+                </div>
+                <div class="row">
+                    <div class="cell"><span id="day1-value"></span>°F<br><img id="day1-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day2-value"></span>°F<br><img id="day2-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day3-value"></span>°F<br><img id="day3-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day4-value"></span>°F<br><img id="day4-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    <div class="cell"><span id="day5-value"></span>°F<br><img id="day5-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                </div>
+                </div>
+        </section>
+
+        <section class="island-info">
+            <h2>The Island of Cozumel</h2>
+            <p>Cozumel is the largest inhabited island in Mexico and has some of the most beautiful beaches in the world. There is a plethora of activites available that are fun for the whole family. With a rental vehicle from Scoots, you can reach every part of the island.</p>
+        </section>
+
+        <img class="img-adventure" src="assets/images/jeep.png" alt="Image taken by Greg Rosenke">
+
+        <article class="about-us">
+            <h2>About Us</h2>
+            <p>Hello and welcome to Scoots Rental and Tours! Scoots is the largest distributor of rental vehicles on the island of Cozumel. We offer a wide selection of scooters and 4x4s for your transportation needs while staying on the island. Everything we offer is kept in pristine condition and working order. We have two convenient locations just around the corner from everything you'll need.</p>
+        </article>
+    </main>
+    <footer>
+        <div id="copyright">
+            <p>
+                &copy;<span id="get-year"></span>
+                | Reece Mickelson | Arizona | <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+            </p>
+        </div>
+        <div id="todays-date">
+            <p>
+                <span id="date"></span>
+            </p>
+        </div>
+        <div class="social-media"></div>
+        <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/instagram.png" alt="instagram" class="social-icons"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/facebook.png" alt="facebook" class="social-icons"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="assets/images/twitter.png" alt="twitter" class="social-icons"></a>
+        <a href="https://youtube.com/" target="_blank"><img src="assets/images/youtube.png" alt="youtube" class="social-icons"></a>
+    </footer>
+</body>
+</html>
