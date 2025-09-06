@@ -13,6 +13,6 @@ root                        (project root folder)
     +-- weather site        (half moon chat site)
 ```
 ---
-* author: Reece Mickelson
+* author: Reece Corral
 * class: WDD 230
 * school: BYU-I Online
