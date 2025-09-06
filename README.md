@@ -1,4 +1,7 @@
 # mmickelson5.github.io
+main
+This site contains all major projects and assignments submitted to WDD 230 by BYU-I in 2021.
+Final-Page
 
 ```
 root                        (project root folder)
