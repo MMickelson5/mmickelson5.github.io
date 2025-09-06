@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Preston page for Half Moon Chat.">
+<meta name="author" content="Reece Mickelson">
+
+<title>Preston | Half Moon Chat</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imprima&family=Nunito&family=Slabo+27px&display=swap" rel="stylesheet">
+ 
+<!-- TAB ICONS -->
+<link rel="icon" class="js-site-favicon" type="image/png" href="images/half-moon-chat.png">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- default -->
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- SCRIPT -->
+<script src="js/scripts.js" defer></script>
+<script src="js/weather.js" defer></script>
+<script src="js/preston_alert.js" defer></script>
+     
+</head>
+<body>
+    <div id="heads-up">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion</div>
+<!-- HEADER HERE -->
+	<header>
+        <img src="images/half-moon-chat.png" alt="Image of moon/sun partially behind cloud">
+        <section class="headings">
+            <h1>Half Moon Chat</h1>
+            <q class="m"><i>Your Weather, our Weather</i></q>
+        </section>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav>
+        <ul class="navigation">
+            <li><a class="nav-toggler" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a id="active" href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h2 class="page-title">Preston Idaho</h2>
+        <picture class="banner">
+            <source srcset="images/hero-small.jpg" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.jpg" media="(max-width: 999px)">
+            <source srcset="images/hero-large.jpg" media="(min-width: 1000px)">
+            <img src="images/hero-large.jpg" alt="Image of Preston Idaho" class="banner">
+        </picture>
+            <section class="cur-weather">
+                <h2>Weather Summary</h2><hr>
+                <p>Currently: <span id="current"></span><span id="temperature"></span>°F</p>
+                <p>High: <span id="high"></span>°F</p>
+                <p>Wind Chill: <span id="chill"></span>°F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind"></span> Mph</p>
+            </section>
+        <section class="forecast">
+            <h3 class="forecast"><i>5 Day Forecast</i></h3>
+                <div id="forecast">
+                    <div class="row">
+                        <div class="cell" id="day1"></div>
+                        <div class="cell" id="day2"></div>
+                        <div class="cell" id="day3"></div>
+                        <div class="cell" id="day4"></div>
+                        <div class="cell" id="day5"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell"><span id="day1-value"></span>°F<br><img id="day1-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day2-value"></span>°F<br><img id="day2-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day3-value"></span>°F<br><img id="day3-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day4-value"></span>°F<br><img id="day4-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day5-value"></span>°F<br><img id="day5-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    </div>
+                  </div>
+        </section>
+
+        <section class="body-sections">
+            <h2>Is your family safe?</h2>
+            <hr>
+            <div id="article-body">
+                <picture class="article-image">
+                    <source srcset="images/storm600.jpg" media="(max-width: 600px)">
+                    <source srcset="images/storm1000.jpg" media="(max-width: 800px)">
+                    <img src="images/storm1000.jpg" alt="Image of storm clouds" class="article-image">
+                </picture>
+                <div id="article-text">
+                    <p>It's monsoon season again in our beautiful town of Preston. Monsoon season is a wonderful for our agriculture and lawns, but with monsoons come dangers like lightning, flash flooding, and oppressive winds. How do you keep your family safe?</p>
+                    <p>First, ensure those dependent on you know safe water interaction. <b>1)</b> Never drive a vehicle in standing water where you can't see the bottom clearly. <b>2)</b> Always travel with a companion when weather gets nasty. <b>3)</b> Keep a reserve of food and water ready in case of long term power outages.</p>
+                    <p>Stay posted for future updates and notifications. We will keep you up to date on the latest weather conditions as we recieve them.</p>
+                </div>
+            </div>
+        </section>
+        <section class="body-sections">
+            <h3><i>Contact Information</i></h3>
+            <div class="contact">
+                <br>
+                <img src="images/location.png" alt="Image of company location" class="location"><br>
+                <div class="contact-info">
+                    <span class="address">&#128205; 301 N 1st E</span><br>
+                    <span class="address">Preston, ID 82367</span><br><br>
+                    <span class="phone">&#128222; 555-0101</span><br>
+                    <span class="email">&#128233; example@weather.com</span><br><br>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram" class="social-icons"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook" class="social-icons"></a>
+                    <a href="http://twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter" class="social-icons"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    <div id="copyright">
+        <p>
+            &copy;<span id="getYear"></span>
+            | Reece Mickelson | Arizona | <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+        </p>
+    </div>
+    <div id="date-modified">
+        <p>
+            <span id="date"></span>
+        </p>
+    </div>
+    <div>Weather info provided by: <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a></div>
+</footer>
+</body>
+</html>

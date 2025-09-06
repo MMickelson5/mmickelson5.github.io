@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fish Haven page for Half Moon Chat.">
+<meta name="author" content="Reece Mickelson">
+
+<title>Fish Haven | Half Moon Chat</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imprima&family=Nunito&family=Slabo+27px&display=swap" rel="stylesheet">
+ 
+<!-- TAB ICONS -->
+<link rel="icon" class="js-site-favicon" type="image/png" href="images/half-moon-chat.png">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- default -->
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- SCRIPT -->
+<script src="js/scripts.js" defer></script>
+<script src="js/fish_haven_json.js" defer></script>
+<script src="js/fish_haven_weather.js" defer></script>
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <img src="images/half-moon-chat.png" alt="Image of moon/sun partially behind cloud">
+        <section class="headings">
+            <h1>Half Moon Chat</h1>
+            <q class="m"><i>Your Weather, our Weather</i></q>
+        </section>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav>
+        <ul class="navigation">
+            <li><a class="nav-toggler" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a id="active" href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h2 class="page-title">Fish Haven</h2>
+        <picture class="banner">
+            <source srcset="https://picsum.photos/id/110/600/300" media="(max-width: 999px)">
+            <source srcset="https://picsum.photos/id/110/1000/500" media="(min-width: 1000px)">
+            <img src="https://picsum.photos/id/110/1000/500" alt="Image of Fish Haven Idaho" class="banner">
+        </picture>
+            <section class="cur-weather">
+                <h2>Weather Summary</h2><hr>
+                <p>Currently: <span id="current"></span><span id="temperature"></span>°F</p>
+                <p>High: <span id="high"></span>°F</p>
+                <p>Wind Chill: <span id="chill"></span>°F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind"></span> Mph</p>
+            </section>
+        <section class="forecast">
+            <h3 class="forecast"><i>5 Day Forecast</i></h3>
+                <div id="forecast">
+                    <div class="row">
+                        <div class="cell" id="day1"></div>
+                        <div class="cell" id="day2"></div>
+                        <div class="cell" id="day3"></div>
+                        <div class="cell" id="day4"></div>
+                        <div class="cell" id="day5"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell"><span id="day1-value"></span>°F<br><img id="day1-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day2-value"></span>°F<br><img id="day2-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day3-value"></span>°F<br><img id="day3-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day4-value"></span>°F<br><img id="day4-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                        <div class="cell"><span id="day5-value"></span>°F<br><img id="day5-img" src="https://via.placeholder.com/100" alt="Weather symbol"></div>
+                    </div>
+                  </div>
+        </section>
+
+        <section class="body-sections">
+            <h2><b>Disease In Our Community</b></h2>
+            <hr>
+            <div class="article-body">
+                <picture class="article-image">
+                    <source srcset="https://picsum.photos/id/160/600/400" media="(max-width: 600px)">
+                    <source srcset="https://picsum.photos/id/160/1000/800" media="(max-width: 800px)">
+                    <img src="https://picsum.photos/id/160/1000/800" alt="Image of smart phone" class="article-image">
+                </picture>
+                <div class="article-text">
+                    <p>Important information that your family needs to know is always available here on your community page. But, with the ever increasing number of social media sites and other distracting internet filth, how can you keep your family safe?</p>
+                    <p>It may seem like old news, but the number of families in the United States that are affected by pornography and other forms of sexual material is rising just as quickly as the rest of the internet. Don't be startled! This is a disease that has a treatment and with time you and your family can become aware of its dangers and its weaknesses.</p>
+                    <p>The easiest way to cure a disease is to prevent it. Help your children, friends, and family understand the destructive nature of pornography. If you know someone who is having issues, don't be too quick to judge. Know that it is something they stuggle with and that it is not who they are. As we spend more time trying to understand rather than fix, we bring these individuals closer rather than pushing them away. Please share acceptance with the people you interact with and together we can cure our community one individual at a time.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="events-container"></div>
+
+        <section class="body-sections">
+            <h3><i>Contact Information</i></h3>
+            <div class="contact">
+                <br>
+                <img src="images/location.png" alt="Image of company location" class="location"><br>
+                <div class="contact-info">
+                    <span class="address">&#128204; 301 N 1st E</span><br>
+                    <span class="address">Preston, ID 82367</span><br><br>
+                    <span class="phone">&#128222; 555-0101</span><br>
+                    <span class="email">&#128233; example@weather.com</span><br><br>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram" class="social-icons"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook" class="social-icons"></a>
+                    <a href="http://twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter" class="social-icons"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    <div id="copyright">
+        <p>
+            &copy;<span id="getYear"></span>
+            | Reece Mickelson | Arizona | <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+        </p>
+    </div>
+    <div id="date-modified">
+        <p>
+            <span id="date"></span>
+        </p>
+    </div>
+    <div>Weather info provided by: <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a></div>
+</footer>
+</body>
+</html>
