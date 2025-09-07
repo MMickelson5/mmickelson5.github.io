@@ -1,14 +1,15 @@
 header, body, footer{
   max-width: 600px;
   margin: 25px auto;
+  background-color: #2F3131;
 }
 
 header {
   font-family: 'Roboto Slab', 'Open Sans', sans-serif;
   font-size: large;
   font-weight: bolder;
-  background-color: darkcyan;
-  padding: 10px;
+  background-color: #7A7D7D;
+  padding: 10%;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -34,8 +35,8 @@ h2 {
 
 footer {
   display: block;
-  background-color: darkcyan;
-  padding: 10px;
+  background-color: #7A7D7D;
+  padding: 10%;
   align-items: center;
   text-align: center;
 }
@@ -46,15 +47,16 @@ footer a:link {
 
 footer a:hover {
   font-weight: 500;
-  text-shadow: 5px 2px 5px gray;
+  color: #fff;
 }
 
 footer a:visited {
-  color: black;
+  text-decoration: none;
+  color: #D0CFCF;
 }
 
 .dropbtn {
-  background-color: darkcyan;
+  background-color: #D0CFCF;
   color: black;
   font-size: medium;
   font-family: 'Roboto', 'Open Sans', sans-serif;
@@ -83,7 +85,7 @@ footer a:visited {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #D0CFCF;
   min-width: 120px;
   width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -97,11 +99,11 @@ footer a:visited {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #D0CFCF;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: darkcyan; color: black;}
+.dropdown:hover .dropbtn {background-color: #D0CFCF; color: black;}
 
 .dropdown:hover .arrow {
   transform: rotate(-135deg);
@@ -110,7 +112,7 @@ footer a:visited {
 
 #main-body {
   padding-left: 20px;
-  color: dimgrey;
+  color: #D0CFCF;
 }
 
 #copyright {
