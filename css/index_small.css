@@ -15,7 +15,8 @@ header {
 }
 
 header img {
-  width: auto;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
   box-shadow:1px 2px 2px 1px black;
 }
