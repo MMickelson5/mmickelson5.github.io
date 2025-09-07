@@ -27,9 +27,4 @@
         border-radius: 5px;
         padding: 10px;
     }
-
-    .dropdown:active .arrow {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-}
 }
