@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Preston page for Half Moon Chat.">
-<meta name="author" content="Reece Mickelson">
+<meta name="description" content="Storm Center page for Half Moon Chat.">
+<meta name="author" content="Reece Corral">
 
-<title>Preston | Half Moon Chat</title>
+<title>Storm Center | Half Moon Chat</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -46,99 +46,99 @@
             <li><a class="nav-toggler" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
             <li><a id="active" href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     
     
 <!-- CONTENT HERE -->
     <main>
-            <form method="get" action="thanks.html">
-                <fieldset class="information">
-                    <legend>Your Information</legend>
-                    <label class="top">
-                        Full Name* <input type="text" name="name" minlength="2" required pattern="[a-zA-Z]+[ ][a-zA-Z]+">
-                    </label>
-                    <label class="top">
-                        Email <input type="email" name="email" placeholder="someone@gmail.com">
-                    </label>
-                    <label class="top">
-                        Phone* <input type="tel" name="phone" required>
-                    </label>
-                    <label class="top">
-                        Zip Code* <input type="number" name="zipcode" required>
-                    </label>
-                </fieldset>
-                <fieldset class="information">
-                    <legend>Storm Information</legend>
-                    <label class="top">
-                        Storm Date <input type="date" name="stormDate">
-                    </label>
-                    <label class="top">
-                        Storm Type<input list="stormtypes" name="stormtypes">
-                        <datalist id="stormtypes">
-                            <option value="">&#9662;</option>
-                            <option value="Hail">
-                            <option value="Hurricane">
-                            <option value="Thunderstorm">
-                            <option value="Tornado">
-                        </datalist>
-                    </label>
-                    <label class="sbs" for="stormseverity">
-                        Storm Severity: &nbsp;&nbsp;&nbsp;<input type="range" id="stormseverity" name="stormseverity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
-                    </label>
-                    <datalist id="tickmarks">
-                        <option value="0">
-                        <option value="1">
-                        <option value="2">
-                        <option value="3">
-                        <option value="4">
-                        <option value="5">
-                        <option value="6">
-                        <option value="7">
-                        <option value="8">
-                        <option value="9">
-                        <option value="10">
+        <form method="get" action="thanks.html">
+            <fieldset class="information">
+                <legend>Your Information</legend>
+                <label class="top">
+                    Full Name* <input type="text" name="name" minlength="2" required pattern="[a-zA-Z]+[ ][a-zA-Z]+">
+                </label>
+                <label class="top">
+                    Email <input type="email" name="email" placeholder="someone@gmail.com">
+                </label>
+                <label class="top">
+                    Phone* <input type="tel" name="phone" required>
+                </label>
+                <label class="top">
+                    Zip Code* <input type="number" name="zipcode" required>
+                </label>
+            </fieldset>
+            <fieldset class="information">
+                <legend>Storm Information</legend>
+                <label class="top">
+                    Storm Date <input type="date" name="stormDate">
+                </label>
+                <label class="top">
+                    Storm Type<input list="stormtypes" name="stormtypes">
+                    <datalist id="stormtypes">
+                        <option value="">&#9662;</option>
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
                     </datalist>
-                    <label class="top" for="regions">
-                        Storm region:
+                </label>
+                <label class="sbs" for="stormseverity">
+                    Storm Severity: &nbsp;&nbsp;&nbsp;<input type="range" id="stormseverity" name="stormseverity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <label class="top" for="regions">
+                    Storm region:
 
-                        <select id="regions" name="regions">
-                            <option value="" disabled selected>Select Region</option>
-                            <option value="Preston">Preston</option>
-                            <option value="SodaSprings">Soda Springs</option>
-                            <option value="FishHeaven">Fish Heaven</option>
-                        </select>
+                    <select id="regions" name="regions">
+                        <option value="" disabled selected>Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="SodaSprings">Soda Springs</option>
+                        <option value="FishHeaven">Fish Heaven</option>
+                    </select>
 
-                    </label>
-                    <div>User in-danger level: </div>
-                    <label class="sbs">
-                        <input type="radio" name="level" value="yes">Yes
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="level" value="maybe">Maybe
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="level" value="no">No
-                    </label>
-                    <label class="top" for="additional">Additional information or comments:</label>
-                    <textarea id="additional" name="additional" rows="4" cols="38"></textarea>
-                </fieldset>
-                <div class="page-button">
-                    <input type="submit" name="submit" value="Report Storm" class="submitBtn">
-                </div>
-            </form>
+                </label>
+                <div>User in-danger level: </div>
+                <label class="sbs">
+                    <input type="radio" name="level" value="yes">Yes
+                </label>
+                <label class="sbs">
+                    <input type="radio" name="level" value="maybe">Maybe
+                </label>
+                <label class="sbs">
+                    <input type="radio" name="level" value="no">No
+                </label>
+                <label class="top" for="additional">Additional information or comments:</label>
+                <textarea id="additional" name="additional" rows="4" cols="38"></textarea>
+            </fieldset>
+            <div class="page-button">
+                <input type="submit" name="submit" value="Report Storm" class="submitBtn">
+            </div>
+        </form>
         <section class="body-sections">
             <h3><i>Contact Information</i></h3>
             <div class="contact">
                 <br>
                 <img src="images/location.png" alt="Image of company location" class="location"><br>
                 <div class="contact-info">
-                    <span class="address">&#128205; 301 N 1st E</span><br>
+                    <span class="address">&#128204; 301 N 1st E</span><br>
                     <span class="address">Preston, ID 82367</span><br><br>
                     <span class="phone">&#128222; 555-0101</span><br>
                     <span class="email">&#128233; example@weather.com</span><br><br>
@@ -155,7 +155,7 @@
     <div id="copyright">
         <p>
             &copy;<span id="getYear"></span>
-            | Reece Mickelson | Arizona | <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+            | Reece Corral | Arizona | <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
         </p>
     </div>
     <div id="date-modified">
