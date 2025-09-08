@@ -49,6 +49,7 @@ ul {
 	background-color: lightgray;
 	padding: 10px 20px 0 10px;
 	text-align: center;
+	max-width: 1000px;
 }
 
 footer {
@@ -330,6 +331,32 @@ article li {
 	padding: 0;
 }
 
+/* Show return-home-button on all screen sizes */
+.return-home-button {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    left: auto;
+    top: auto;
+    background-color: #2F3131;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+	text-decoration: none;
+    font-family: 'Nunito', 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: .75rem;
+    box-shadow: 1px 1px 5px black;
+    opacity: 0.7;
+    z-index: 1000;
+}
+
+.return-home-button:hover {
+    background-color: #7A7D7D;
+    opacity: 1.0;
+}
+
 /* Medium+ views */
 @media only screen and (min-width: 32.5em) {
 	header,
@@ -555,9 +582,7 @@ article li {
 		padding-bottom: 20px;
 	}
 
-	.body-sections {
-		max-width: 1000px;
-	}
+
 
     nav ul li a {
         font-size: 1.2rem;
@@ -607,5 +632,4 @@ article li {
 		width: 100%;
 		max-width: 300px;
 	}
-
 }
