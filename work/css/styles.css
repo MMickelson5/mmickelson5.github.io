@@ -52,7 +52,7 @@ svg {
     background-color: var(--link-color-standard);
     color: var(--text-color);
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.25em;
     padding: .5em 1em;
     text-align: center;
     text-decoration: none;
