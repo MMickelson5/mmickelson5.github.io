@@ -1,6 +1,6 @@
 # mmickelson5.github.io
 main
-This site contains all major projects and assignments submitted to WDD 230 by BYU-I in 2021.
+This site contains all the major plans and projects I have completed so far.
 Final-Page
 
 ```
@@ -12,8 +12,9 @@ root                        (project root folder)
     +-- weather site plan   (planning page for half moon chat)
     +-- weather site        (half moon chat site)
     +-- scoots              (scoots travel website)
-    +-- work                (work related projects)
+    +-- work                (work-related projects)
       +-- shortcuts         (processing shortcut backup)
+      +-- barcode generator (barcode generator)
 ```
 ---
 * author: Reece Corral
