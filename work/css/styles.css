@@ -39,6 +39,7 @@ svg {
 
 .button-container {
     display: grid;
+    align-items: center;
     justify-content: center;
     align-items: center;
     margin: 0;
