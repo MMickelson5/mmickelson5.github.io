@@ -57,6 +57,7 @@ svg {
     font-size: 1em;
     padding: .5em 1em;
     text-align: center;
+    text-decoration: none;
 }
 
 .link-button:hover {
