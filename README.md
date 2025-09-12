@@ -1,4 +1,4 @@
-# [mmickelson5.github.io](https://mmickelson5.github.io/)
+# https://mmickelson5.github.io/
 main
 This site contains all the major plans and projects I have completed so far.
 Final-Page
