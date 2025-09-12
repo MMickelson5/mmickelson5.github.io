@@ -13,7 +13,7 @@ root                        (project root folder)
     +-- weather site        (half moon chat site)
     +-- scoots              (scoots travel website)
     +-- work                (work related projects)
-      +-- processing shortcuts         (processing shortcut backup)
+      +-- shortcuts         (processing shortcut backup)
 ```
 ---
 * author: Reece Corral
