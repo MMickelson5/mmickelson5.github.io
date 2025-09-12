@@ -5,11 +5,12 @@ const printButton = document.getElementById('printButton');
 generateButton.addEventListener('click', () => {
     let data = document.getElementById('barcodeDataInput').value;
     let type = document.getElementById('barcodeTypeInput').value.trim().toLowerCase();
+    let rotation = document.getElementById('barcodeRotationInput').value.toString();
 
     if (type === 'qr') type = 'QRCode';
     else if (type === 'barcode') type = 'Code128';
 
-    const url = `https://barcode.tec-it.com/barcode.ashx?data=${encodeURIComponent(data)}&code=${encodeURIComponent(type)}&translate-esc=on&dpi=300`;
+    const url = `https://barcode.tec-it.com/barcode.ashx?data=${encodeURIComponent(data)}&code=${encodeURIComponent(type)}&translate-esc=on&dpi=300&rotation=${encodeURIComponent(rotation)}`;
 
     const src = url;
     const alt = `Barcode for ${data}`;
@@ -21,11 +22,12 @@ generateButton.addEventListener('click', () => {
 printButton.addEventListener('click', () => {
     let data = document.getElementById('barcodeDataInput').value;
     let type = document.getElementById('barcodeTypeInput').value.trim().toLowerCase();
+    let rotation = document.getElementById('barcodeRotationInput').value.toString();
 
     if (type === 'qr') type = 'QRCode';
     else if (type === 'barcode') type = 'Code128';
 
-    const url = `https://barcode.tec-it.com/barcode.ashx?data=${encodeURIComponent(data)}&code=${encodeURIComponent(type)}&translate-esc=on&dpi=300&rotation=90`;
+    const url = `https://barcode.tec-it.com/barcode.ashx?data=${encodeURIComponent(data)}&code=${encodeURIComponent(type)}&translate-esc=on&dpi=300&rotation=${encodeURIComponent(rotation)}`;
 
     const src = url;
 

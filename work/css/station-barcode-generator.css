@@ -132,6 +132,7 @@ footer {
         flex-direction: column;
         margin: 10px;
         gap: 10px;
+        max-width: 100%;
     }
 
     .barcode-button {
