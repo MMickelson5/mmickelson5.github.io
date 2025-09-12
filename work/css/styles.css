@@ -79,7 +79,7 @@ svg {
 
 @media (max-width: 576px) {
     .link-button {
-        width: 100%;
+        width: auto;
         height: 60px;
         font-size: 1.5em;
     }
