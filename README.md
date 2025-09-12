@@ -6,13 +6,13 @@ Final-Page
 ```
 root                        (project root folder)
 +-- page portal             (landing page)
-  +-- week 1                (subfolder - week 1 assignments)
+  +-- plans                 (subfolder - project plans)
     +-- design principles   (exploration into designing)
-  +-- week 2                (subfolder - week 2 assignments)
+  +-- projects              (subfolder - completed projects)
     +-- weather site plan   (planning page for half moon chat)
     +-- weather site        (half moon chat site)
 ```
 ---
 * author: Reece Corral
-* class: WDD 230
+* title: full-stack developer
 * school: BYU-I Online
