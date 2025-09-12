@@ -1,0 +1,148 @@
+:root {
+    --background-color: #f5f5f5;
+    --secondary-color: #fff;
+
+    --text-color: #fff;
+
+    --link-color-standard: #da0800; 
+    --link-color-hover: #8b4141;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    font-family: Open Sans, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.25em;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 0;
+    box-shadow: 0 0 2px #8888;
+}
+
+p {
+    font-family: Open Sans, sans-serif;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+.barcode-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.generate-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.print-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.content {
+    flex:1;
+}
+
+.barcode-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--link-color-standard);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 0 48px;
+    text-align: center;
+    text-decoration: none;
+    gap: 1em;
+    line-height: 48px;
+    height: 48px;
+}
+
+.barcode-button:hover {
+    background-color: var(--link-color-hover);
+    cursor: pointer;
+}
+
+.barcode-input {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.25em;
+    padding: 0 16px;
+    height: 24px;
+    width: 256px;
+}
+
+#barcodeImage {
+    border-radius: 8px;
+    box-shadow: 0 0 2px #8888;
+}
+
+#last-updated {
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .content {
+        width: 100%;
+    }
+
+    .barcode-container, .input-container, .generate-button-container, .print-button-container {
+        flex-direction: column;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .barcode-button {
+        font-size: 1em;
+        line-height: 36px;
+        height: 36px;
+        width: 100vw;
+        border-radius: 0;
+    }
+} 
+
+@media (min-width: 1400px) {
+    .content {
+        margin: 40px 20%;
+    }
+}
