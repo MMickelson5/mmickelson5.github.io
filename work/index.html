@@ -24,4 +24,23 @@
         </a>
     </div>
 </body>
+
+<footer>
+    <div id="last-updated">
+        <p>Last Updated: <script>document.write(document.lastModified);</script></p>
+    </div>
+    <div id="copyright">
+        <p>
+            &copy; <span id="currentYear"></span>
+            | Reece Corral
+        </p>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = currentYear;
+    });
+</script>
+
 </html>
