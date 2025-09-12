@@ -9,11 +9,13 @@
 }
 
 body {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--background-color);
     margin: 0;
+    min-height: 100vh;
 }
 
 h1 {
@@ -38,8 +40,6 @@ p {
 
 footer {
     text-align: center;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -86,6 +86,10 @@ svg {
 .link-button:hover {
     background-color: var(--link-color-hover);
     cursor: pointer;
+}
+
+.content {
+    flex: 1;
 }
 
 #last-updated {
