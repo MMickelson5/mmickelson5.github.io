@@ -11,6 +11,9 @@ root                        (project root folder)
   +-- projects              (subfolder - completed projects)
     +-- weather site plan   (planning page for half moon chat)
     +-- weather site        (half moon chat site)
+    +-- scoots              (scoots travel website)
+    +-- work                (work related projects)
+      +-- processing shortcuts         (processing shortcut backup)
 ```
 ---
 * author: Reece Corral
