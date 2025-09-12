@@ -16,13 +16,13 @@ body {
     margin: 0;
 }
 
-p {
+h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
     font-family: Open Sans, sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     line-height: 1.25em;
     text-align: center;
@@ -30,6 +30,19 @@ p {
     height: 80px;
     margin-top: 0;
     box-shadow: 0 0 2px #8888;
+}
+
+#instructions {
+    background-color: var(--secondary-color);
+    font-family: Open Sans, sans-serif;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    text-align: center;
+    box-shadow: 0 0 2px #8888;
+    margin: 40px;
+    width: auto;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 svg {
@@ -57,7 +70,6 @@ svg {
     gap: 1em;
     line-height: 48px;
     height: 48px;
-    margin-top: 25px;
 }
 
 .link-button:hover {
@@ -69,4 +81,16 @@ svg {
     .link-button {
         width: 100%;
     }
+
+    #instructions {
+        width: auto;
+        margin: 40px 0;
+        border-radius: 0;
+    }
 } 
+
+@media (min-width: 1400px) {
+    #instructions {
+        margin: 40px 20%;
+    }
+}
