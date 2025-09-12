@@ -11,27 +11,28 @@
     <h1>Nellis Station Barcode Generator</h1>
 
     <div class="content">
+        <div class="input-container">
+            <input type="text" placeholder="Input 'QR' or 'Barcode'" id="barcodeTypeInput" class="barcode-input"/>
+            <input type="text" placeholder="Input Code Data" id="barcodeDataInput" class="barcode-input"/>
+        </div>
+
+        <p>Enter your desired code type and data,<br>then click here to see how your barcode will look</p>
+
+        <div class="generate-button-container">   
+            <button id="generateBarcodeButton" class="barcode-button">Generate Barcode</button>
+        </div>
+
         <div class="barcode-container">
             <img id="barcodeImage"/>
         </div>
 
-        <div class="input-container">
-            <input type="text" placeholder="QR or Barcode" id="barcodeTypeInput" class="barcode-input"/>
-            <input type="text" placeholder="Data" id="barcodeDataInput" class="barcode-input"/>
-        </div>
-        <p>Enter your desired code type and data,<br>then click here to see how your barcode will look</p>
-        <div class="generate-button-container">   
-            <button id="generateBarcodeButton" class="barcode-button">Generate Barcode</button>
-        </div>
     </div>
-
-    <script src="js/barcode-generator.js"></script>
 
 </body>
 <footer>
     <p>Click here to print</p>
     <div class="print-button-container">
-        <button id="printBarcodeButton" class="barcode-button">Print Barcode</button>
+        <button id="printButton" class="barcode-button">Print Barcode</button>
     </div>
 
     <a href='https://www.tec-it.com' title='Barcode Software by TEC-IT' target='_blank'>TEC-IT Barcode Generator</a>
@@ -45,12 +46,12 @@
             | Reece Corral
         </p>
     </div>
-
-    <script>
+</footer>
+<script src="js/barcode-generator.js"></script>
+<script>
         document.addEventListener('DOMContentLoaded', function() {
             var currentYear = new Date().getFullYear();
             document.getElementById('currentYear').textContent = currentYear;
         });
     </script>
-</footer>
 </html>

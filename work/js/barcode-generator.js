@@ -1,5 +1,5 @@
-const printButton = document.getElementById('printBarcodeButton');
 const generateButton = document.getElementById('generateBarcodeButton');
+const printButton = document.getElementById('printButton');
 
 
 generateButton.addEventListener('click', () => {
@@ -28,6 +28,7 @@ printButton.addEventListener('click', () => {
     const url = `https://barcode.tec-it.com/barcode.ashx?data=${encodeURIComponent(data)}&code=${encodeURIComponent(type)}&translate-esc=on&dpi=300&rotation=90`;
 
     const src = url;
+
     const alt = `Barcode for ${data}`;
 
 
