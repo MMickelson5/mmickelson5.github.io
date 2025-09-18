@@ -14,13 +14,16 @@
         <div class="input-container">
             <input type="text" placeholder="Input 'QR' or 'Barcode'" id="barcodeTypeInput" class="barcode-input"/>
             <input type="text" placeholder="Input Code Data" id="barcodeDataInput" class="barcode-input"/>
-            <input type="text" placeholder="Input 0 or 90" id="barcodeRotationInput" class="barcode-input"/>
         </div>
 
-        <p>Enter your desired code type, data, and rotation,<br>then click here to generate and print the barcode</p>
+        <p>Enter your desired code type and data<br>then click here to generate and print the barcode</p>
 
         <div class="print-button-container">   
             <button id="printButton" class="barcode-button">Generate Barcode</button>
+        </div>
+
+        <div class="barcode-container">
+            <img id="barcodeImage" alt="Your barcode will appear here" />
         </div>
 
     </div>

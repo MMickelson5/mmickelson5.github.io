@@ -34,6 +34,13 @@ h1 {
     box-shadow: 0 0 2px #8888;
 }
 
+h2 {
+    font-family: Open Sans, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
 p {
     font-family: Open Sans, sans-serif;
     text-align: center;
@@ -117,6 +124,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 0 2px #8888;
     max-width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -125,6 +133,13 @@ footer {
 }
 
 @media (max-width: 576px) {
+    h1{
+        font-size: 1.75em;
+        line-height: 1em;
+        height: auto;
+        padding: 10px;
+    }
+
     .content {
         width: 100%;
     }
@@ -142,6 +157,10 @@ footer {
         height: 36px;
         width: 100vw;
         border-radius: 0;
+    }
+
+    #barcodeImage {
+        width: 90%;
     }
 } 
 
