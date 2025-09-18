@@ -126,6 +126,8 @@ footer {
     max-width: 100%;
     width: 50%;
     height: auto;
+    padding-top: 2em;
+    background-color: var(--secondary-color);
 }
 
 #last-updated {
