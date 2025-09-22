@@ -3,17 +3,16 @@ const typeInput = document.getElementById('barcodeTypeInput');
 const previewImage = document.getElementById('barcodeImage');
 const printButton = document.getElementById('printButton');
 
+// Create barcode API URL
 function buildApiUrl(data, type) {
-    // normalize type
     type = type.trim().toLowerCase();
     if (type === 'qr') type = 'qr';
     else if (type === 'barcode' || type === '128') type = '128';
-    else return null; // unsupported type
-
-    // encode user input safely
+    else return null;
     return `https://barcodeapi.org/api/${type}/${encodeURIComponent(data)}?dpi=1000`;
 }
 
+// Update preview image and call API
 function updatePreview() {
     let data = dataInput.value;
     let type = typeInput.value;
@@ -38,12 +37,12 @@ function updatePreview() {
     }
 }
 
-// update preview when typing
+// Do the preview change
 [dataInput, typeInput].forEach(input => {
     input.addEventListener('input', updatePreview);
 });
 
-// Print button (opens in new tab)
+// Button to print the barcode
 printButton.addEventListener('click', () => {
     let data = dataInput.value;
     let type = typeInput.value;
