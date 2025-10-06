@@ -44,8 +44,8 @@ function updatePreview() {
 
 // Button to print the barcode
 printButton.addEventListener('click', () => {
-    let data = dataInput.value;
-    let type = typeInput.value;
+    let data = dataInput.value.trim();
+    let type = typeInput.value.trim();
 
     const url = buildApiUrl(data, type);
     if (!url) return;
@@ -55,6 +55,7 @@ printButton.addEventListener('click', () => {
         .then(blob => {
             const objectUrl = URL.createObjectURL(blob);
 
+            // Open a new tab for printing
             const printWindow = window.open('', '_blank');
             printWindow.document.write(`
                 <html>
@@ -78,19 +79,18 @@ printButton.addEventListener('click', () => {
                 </head>
                 <body>
                     <img id="printImage" src="${objectUrl}" alt="Barcode for ${data}">
+                    <script>
+                        const img = document.getElementById('printImage');
+                        img.onload = () => {
+                            window.focus();
+                            window.print();
+                            window.onafterprint = () => window.close();
+                        };
+                    <\/script>
                 </body>
                 </html>
             `);
             printWindow.document.close();
-
-            // Wait until the image fully loads before printing
-            printWindow.onload = () => {
-                const img = printWindow.document.getElementById('printImage');
-                img.onload = () => {
-                    printWindow.focus();
-                    printWindow.print();
-                };
-            };
         })
         .catch(err => console.error("Error generating or printing barcode:", err));
 });
