@@ -77,12 +77,20 @@ printButton.addEventListener('click', () => {
                     </style>
                 </head>
                 <body>
-                    <img src="${objectUrl}" alt="Barcode for ${data}">
+                    <img id="printImage" src="${objectUrl}" alt="Barcode for ${data}">
                 </body>
                 </html>
             `);
             printWindow.document.close();
-            printWindow.focus();
-            printWindow.print();
-        });
+
+            // Wait until the image fully loads before printing
+            printWindow.onload = () => {
+                const img = printWindow.document.getElementById('printImage');
+                img.onload = () => {
+                    printWindow.focus();
+                    printWindow.print();
+                };
+            };
+        })
+        .catch(err => console.error("Error generating or printing barcode:", err));
 });
