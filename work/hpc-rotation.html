@@ -3,41 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nellis - Shortcut Backup</title>
+    <title>HPC Rotation Tool</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="script" href="js/hpc-rotator.js">
 </head>
 
 <body>
     <div class="content">
         <h1>HPC Rotation List</h1>
         <p id="instructions">
-            This is a tool to rotate the weekly HPC roster.<br><br><strong>Instructions: </strong> Click the button below to rotate the processor list.</p>
-        <div class="button-container">
-            <button id="rotateButton">
-                Rotate
-            </button>
-        </div>
-    </div>
-</body>
-
-<footer>
-    <div id="last-updated">
-        <p>Last Updated: <script>document.write(document.lastModified);</script></p>
-    </div>
-    <div id="copyright">
-        <p>
-            &copy; <span id="currentYear"></span>
-            | Reece Corral
+            Click the button below to rotate the weekly HPC roster.
         </p>
+        <div class="button-container">
+            <button id="rotateButton">Rotate</button>
+        </div>
+        <div id="rotationResult" class="rotation-list"></div>
     </div>
-</footer>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var currentYear = new Date().getFullYear();
-        document.getElementById('currentYear').textContent = currentYear;
-    });
-</script>
 
+    <footer>
+        <div id="last-updated">
+            <p>Last Updated: <script>document.write(document.lastModified);</script></p>
+        </div>
+        <div id="copyright">
+            <p>&copy; <span id="currentYear"></span> | Reece Corral</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+
+    <script src="js/hpc-rotator.js"></script>
+</body>
 </html>

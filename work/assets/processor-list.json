@@ -2,112 +2,134 @@
     "processors":[
         {
             "name": "Alex B.",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Alex N.",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Andrew",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Bri",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Carolina",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Codey",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Dani",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Jen",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Jenimar",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Karina",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Kristen",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Mango",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Matt",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Naomi",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Nina",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Noah",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Reece",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Skylee",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Tanner",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Taylor",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Tom",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         },
 
         {
             "name": "Zach",
-            "preference": true
+            "preference": true,
+            "workedLastWeek": false
         }
     ]
 }
