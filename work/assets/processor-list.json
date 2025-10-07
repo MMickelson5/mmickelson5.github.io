@@ -3,133 +3,155 @@
         {
             "name": "Alex B.",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Alex N.",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Andrew",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Bri",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Carolina",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": true
         },
 
         {
             "name": "Codey",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Dani",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Jen",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Jenimar",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Karina",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Kristen",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Mango",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Matt",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Naomi",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Nina",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Noah",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Reece",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Skylee",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Tanner",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Taylor",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         },
 
         {
             "name": "Tom",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": true
         },
 
         {
             "name": "Zach",
             "preference": true,
-            "workedLastWeek": false
+            "workedLastWeek": false,
+            "permanent": false
         }
     ]
 }
