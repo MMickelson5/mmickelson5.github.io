@@ -37,7 +37,7 @@
 
         {
             "name": "Codey",
-            "preference": true,
+            "preference": false,
             "workedLastWeek": false,
             "permanent": false
         },
@@ -72,7 +72,7 @@
 
         {
             "name": "Kristen",
-            "preference": true,
+            "preference": false,
             "workedLastWeek": false,
             "permanent": false
         },
