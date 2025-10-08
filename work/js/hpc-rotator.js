@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return parsed;
         }
 
-        const response = await fetch("processor-list.json");
+        const response = await fetch("assets/processor-list.json");
         const data = await response.json();
         return {
             timestamp: new Date().toISOString(),
