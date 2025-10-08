@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Weight selection — those who prefer HPC get higher odds
         const weightedPool = eligible.flatMap(p => {
-            const weight = p.preference ? 3 : 1; // 3x chance if they prefer HPC
+            const weight = p.preference ? 5 : 1; // 3x chance if they prefer HPC
             return Array(weight).fill(p);
         });
 
