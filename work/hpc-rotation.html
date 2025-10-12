@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HPC Rotation Tool</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/rotation-styles.css">
 </head>
 
 <body>
     <div class="content">
         <h1>HPC Rotation Lists</h1>
+
         <p id="instructions">
             Click the button below to create this week's rotation. The previous week's list will stay on the left.
         </p>
+
         <div class="button-container">
             <button id="rotateButton">Rotate</button>
         </div>
 
         <div id="listsContainer" class="lists-container">
+            
             <div class="list-section">
                 <h2>Last Week’s List</h2>
                 <div id="lastWeekList" class="rotation-list"></div>
             </div>
+
             <div class="list-section">
                 <h2>This Week’s List</h2>
                 <div id="thisWeekList" class="rotation-list"></div>
             </div>
+
         </div>
     </div>
 

@@ -29,8 +29,15 @@ h1 {
     text-align: center;
     width: 100%;
     height: 80px;
-    margin-top: 0;
+    margin-top: 0;;
     box-shadow: 0 0 2px #8888;
+}
+
+h2 {
+    font-family: Open Sans, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0;
 }
 
 p {
@@ -44,33 +51,31 @@ footer {
     width: 100%;
 }
 
-#last-updated {
-    font-weight: bold;
+.content {
+    flex: 1;
 }
 
 #instructions {
+    display: flex;
+    justify-content: center;
     background-color: var(--secondary-color);
     font-family: Open Sans, sans-serif;
-    font-size: 1.25em;
-    line-height: 1.25em;
     text-align: center;
-    box-shadow: 0 0 2px #8888;
-    margin: 40px;
-    width: auto;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-svg {
-    height: 36px;
+    width: 640px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .button-container {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
-.link-button {
+#rotateButton {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -86,35 +91,66 @@ svg {
     gap: 1em;
     line-height: 48px;
     height: 48px;
+    width: 256px;
+    box-shadow: 0 0 2px #8888;
+    margin: auto;
+    transition: background-color 0.3s ease;
 }
 
-.link-button:hover {
+#rotateButton:hover {
     background-color: var(--link-color-hover);
     cursor: pointer;
 }
 
-.content {
-    flex: 1;
+#last-updated {
+    font-weight: bold;
+}
+
+.lists-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.list-section {
+    width: 320px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.processor-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.permanent {
+    color: forestgreen;
+    font-weight: bold;
+    margin-left: 6px;
 }
 
 @media (max-width: 576px) {
-    .link-button {
-        width: auto;
-        height: 60px;
-        font-size: 1.5em;
+    h1{
+        font-size: 1.75em;
+        line-height: 1em;
+        height: auto;
+        padding: 10px;
     }
 
-    #instructions {
-        width: auto;
-        margin: 40px 0;
+    .content {
+        width: 100%;
+    }
+
+    #rotateButton {
+        font-size: 1em;
+        line-height: 36px;
+        height: 36px;
+        width: 100vw;
         border-radius: 0;
     }
-
-    
 } 
-
-@media (min-width: 1400px) {
-    #instructions {
-        margin: 40px 20%;
-    }
-}
