@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const sheetURL =
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6bAefKxiMybjAFIVN9xs2jj40JGCMabnDir46vzpyk46AQiMr_qAfy7DMO-yg1pV5422lZkicv43E/pub?output=csv";
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6bAefKxiMybjAFIVN9xs2jj40JGCMabnDir46vzpyk46AQiMr_qAfy7DMO-yg1pV5422lZkicv43E/pub?output=csv";
     const rotateButton = document.getElementById("rotateButton");
     const lastWeekDiv = document.getElementById("lastWeekList");
     const thisWeekDiv = document.getElementById("thisWeekList");
     const MAX_THIS_WEEK = 12;
 
-    // Load saved "last week" data if available
-    let lastWeekSaved = JSON.parse(localStorage.getItem("lastWeek")) || [];
-    if (lastWeekSaved.length > 0) {
-    displayList(lastWeekDiv, lastWeekSaved);
+    // Load stored rotation (list + date)
+    let lastRotation = JSON.parse(localStorage.getItem("lastRotation")) || null;
+    if (lastRotation?.list?.length) {
+    displayList(lastWeekDiv, lastRotation.list, lastRotation.date);
     }
 
     rotateButton.addEventListener("click", async () => {
@@ -20,20 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const rows = csv.trim().split("\n").map(r => r.split(","));
         const headers = rows[0].map(h => h.trim());
         const data = rows.slice(1).map(r =>
-        Object.fromEntries(r.map((v, i) => [headers[i], v.trim()]))
+            Object.fromEntries(r.map((v, i) => [headers[i], v.trim()]))
         );
 
         // Convert TRUE/FALSE to booleans
         data.forEach(p => {
-        p.Permanent = p.Permanent?.toUpperCase() === "TRUE";
-        p.LastWeek = p["Last Week"]?.toUpperCase() === "TRUE";
+            p.Permanent = p.Permanent?.toUpperCase() === "TRUE";
+            p.LastWeek = p["Last Week"]?.toUpperCase() === "TRUE";
         });
 
         const permanents = data.filter(p => p.Permanent);
         const pool = data.filter(p => !p.Permanent);
         const picksNeeded = MAX_THIS_WEEK - permanents.length;
 
-        // People who worked last week have slightly lower odds, but not excluded.
+        // Weighted random selection (less chance if LastWeek = TRUE)
         const weightedSorted = pool
         .map(p => {
             const weight = p.LastWeek ? 0.5 : 1;
@@ -43,21 +43,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const selected = weightedSorted.slice(0, picksNeeded);
         const thisWeek = [...permanents, ...selected];
+        const today = new Date();
+        const dateStamp = today.toLocaleDateString("en-US", {
+            month: "short",
+            day: "numeric",
+            year: "numeric"
+        });
 
-        // Update both lists immediately
-        displayList(lastWeekDiv, lastWeekSaved.length ? lastWeekSaved : []);
-        displayList(thisWeekDiv, thisWeek);
+        // Update both lists
+        displayList(lastWeekDiv, lastRotation?.list || [], lastRotation?.date);
+        displayList(thisWeekDiv, thisWeek, dateStamp);
 
-        // Save for next time
-        localStorage.setItem("lastWeek", JSON.stringify(thisWeek));
-        lastWeekSaved = thisWeek;
+        // Save for next load
+        lastRotation = { list: thisWeek, date: dateStamp };
+        localStorage.setItem("lastRotation", JSON.stringify(lastRotation));
         } catch (err) {
             console.error("Error loading sheet:", err);
         }
     });
 
-    function displayList(container, list) {
+    function displayList(container, list, date) {
     container.innerHTML = "";
+
+    // Optional date stamp
+    const dateLabel = document.createElement("p");
+    dateLabel.classList.add("date-stamp");
+    dateLabel.textContent = date ? `Updated: ${date}` : "No recent data";
+    container.appendChild(dateLabel);
+
     const ul = document.createElement("ul");
     ul.classList.add("processor-list");
 
