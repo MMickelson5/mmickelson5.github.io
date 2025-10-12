@@ -128,6 +128,13 @@ footer {
     text-align: left;
 }
 
+.date-stamp {
+  font-size: 0.9em;
+  color: #aaa;
+  margin: 4px 0 8px;
+  font-style: italic;
+}
+
 .permanent {
     color: forestgreen;
     font-weight: bold;
