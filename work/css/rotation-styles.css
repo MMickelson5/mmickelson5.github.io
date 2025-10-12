@@ -63,7 +63,7 @@ footer {
     text-align: center;
     width: 640px;
     margin: 0 auto;
-    background: #f9f9f9;
+    background: var(--secondary-color);
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -114,12 +114,21 @@ footer {
     flex-wrap: wrap;
 }
 
+.rotation-list {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.125em;
+}
+
+.rotation-list li {
+    list-style: none;
+}
+
 .list-section {
     width: 320px;
-    background: #f9f9f9;
+    background: var(--secondary-color);
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px #8888;
 }
 
 .processor-list {
@@ -130,7 +139,7 @@ footer {
 
 .date-stamp {
   font-size: 0.9em;
-  color: #aaa;
+  color: #8888;
   margin: 4px 0 8px;
   font-style: italic;
 }
